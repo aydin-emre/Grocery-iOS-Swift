@@ -3,28 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041FD35C2562BADF00CA1117 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FD35B2562BADF00CA1117 /* DataManager.swift */; };
 		04AE6940256274AE00CDD5DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE693F256274AE00CDD5DB /* AppDelegate.swift */; };
 		04AE6942256274AE00CDD5DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE6941256274AE00CDD5DB /* SceneDelegate.swift */; };
-		04AE6944256274AE00CDD5DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE6943256274AE00CDD5DB /* ViewController.swift */; };
 		04AE6947256274AE00CDD5DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AE6945256274AE00CDD5DB /* Main.storyboard */; };
 		04AE6949256274B000CDD5DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AE6948256274B000CDD5DB /* Assets.xcassets */; };
 		04AE694C256274B000CDD5DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AE694A256274B000CDD5DB /* LaunchScreen.storyboard */; };
+		04AE696325627B8A00CDD5DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE696225627B8A00CDD5DB /* Constants.swift */; };
+		04AE696625627C3600CDD5DB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE696525627C3600CDD5DB /* BaseViewController.swift */; };
+		04AE696F25627D5C00CDD5DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE696E25627D5C00CDD5DB /* HomeViewController.swift */; };
+		04AE697225627D6300CDD5DB /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE697125627D6300CDD5DB /* CartViewController.swift */; };
+		04AE697825629B3A00CDD5DB /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE697725629B3A00CDD5DB /* GroceryItem.swift */; };
+		04AE698225629C8600CDD5DB /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE698125629C8600CDD5DB /* HomeCollectionViewCell.swift */; };
+		04AE69862562A0E500CDD5DB /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE69852562A0E500CDD5DB /* UIViewExtension.swift */; };
 		1F1EE9849535B164D4200DB5 /* Pods_Grocery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF7C95CD864900BD69276B /* Pods_Grocery.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041FD35B2562BADF00CA1117 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		04AE693C256274AE00CDD5DB /* Grocery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grocery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AE693F256274AE00CDD5DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04AE6941256274AE00CDD5DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04AE6943256274AE00CDD5DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04AE6946256274AE00CDD5DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04AE6948256274B000CDD5DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04AE694B256274B000CDD5DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04AE694D256274B000CDD5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04AE696225627B8A00CDD5DB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04AE696525627C3600CDD5DB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		04AE696E25627D5C00CDD5DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		04AE697125627D6300CDD5DB /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		04AE697725629B3A00CDD5DB /* GroceryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
+		04AE698125629C8600CDD5DB /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		04AE69852562A0E500CDD5DB /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		7BCFB118398FD2E47AA83316 /* Pods-Grocery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grocery.release.xcconfig"; path = "Target Support Files/Pods-Grocery/Pods-Grocery.release.xcconfig"; sourceTree = "<group>"; };
 		A7AF7C95CD864900BD69276B /* Pods_Grocery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grocery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F04184F4690A27AC6B714D /* Pods-Grocery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grocery.debug.xcconfig"; path = "Target Support Files/Pods-Grocery/Pods-Grocery.debug.xcconfig"; sourceTree = "<group>"; };
@@ -42,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041FD35A2562BACC00CA1117 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				041FD35B2562BADF00CA1117 /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		04AE6933256274AE00CDD5DB = {
 			isa = PBXGroup;
 			children = (
@@ -65,13 +87,68 @@
 			children = (
 				04AE693F256274AE00CDD5DB /* AppDelegate.swift */,
 				04AE6941256274AE00CDD5DB /* SceneDelegate.swift */,
-				04AE6943256274AE00CDD5DB /* ViewController.swift */,
-				04AE6945256274AE00CDD5DB /* Main.storyboard */,
 				04AE6948256274B000CDD5DB /* Assets.xcassets */,
-				04AE694A256274B000CDD5DB /* LaunchScreen.storyboard */,
+				04AE69842562A0D100CDD5DB /* Extensions */,
+				041FD35A2562BACC00CA1117 /* Managers */,
+				04AE697A25629C3000CDD5DB /* Views */,
+				04AE697625629B2700CDD5DB /* Models */,
+				04AE6960256279F500CDD5DB /* Controllers */,
+				04AE6961256279FC00CDD5DB /* Storyboards */,
+				04AE695F256279EB00CDD5DB /* Resources */,
 				04AE694D256274B000CDD5DB /* Info.plist */,
 			);
 			path = Grocery;
+			sourceTree = "<group>";
+		};
+		04AE695F256279EB00CDD5DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04AE696225627B8A00CDD5DB /* Constants.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04AE6960256279F500CDD5DB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04AE696525627C3600CDD5DB /* BaseViewController.swift */,
+				04AE696E25627D5C00CDD5DB /* HomeViewController.swift */,
+				04AE697125627D6300CDD5DB /* CartViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		04AE6961256279FC00CDD5DB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				04AE6945256274AE00CDD5DB /* Main.storyboard */,
+				04AE694A256274B000CDD5DB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		04AE697625629B2700CDD5DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04AE697725629B3A00CDD5DB /* GroceryItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04AE697A25629C3000CDD5DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04AE698125629C8600CDD5DB /* HomeCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04AE69842562A0D100CDD5DB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04AE69852562A0E500CDD5DB /* UIViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		956092F16E66BAE987186D60 /* Pods */ = {
@@ -80,7 +157,6 @@
 				E9F04184F4690A27AC6B714D /* Pods-Grocery.debug.xcconfig */,
 				7BCFB118398FD2E47AA83316 /* Pods-Grocery.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,6 +179,7 @@
 				04AE6938256274AE00CDD5DB /* Sources */,
 				04AE6939256274AE00CDD5DB /* Frameworks */,
 				04AE693A256274AE00CDD5DB /* Resources */,
+				BCAEE16A841ECAB5D9A0E93F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,6 +258,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BCAEE16A841ECAB5D9A0E93F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Grocery/Pods-Grocery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Grocery/Pods-Grocery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Grocery/Pods-Grocery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -188,9 +282,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04AE6944256274AE00CDD5DB /* ViewController.swift in Sources */,
+				04AE696625627C3600CDD5DB /* BaseViewController.swift in Sources */,
+				041FD35C2562BADF00CA1117 /* DataManager.swift in Sources */,
+				04AE697225627D6300CDD5DB /* CartViewController.swift in Sources */,
 				04AE6940256274AE00CDD5DB /* AppDelegate.swift in Sources */,
 				04AE6942256274AE00CDD5DB /* SceneDelegate.swift in Sources */,
+				04AE696325627B8A00CDD5DB /* Constants.swift in Sources */,
+				04AE696F25627D5C00CDD5DB /* HomeViewController.swift in Sources */,
+				04AE69862562A0E500CDD5DB /* UIViewExtension.swift in Sources */,
+				04AE697825629B3A00CDD5DB /* GroceryItem.swift in Sources */,
+				04AE698225629C8600CDD5DB /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
