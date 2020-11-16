@@ -13,6 +13,7 @@
 		04AE6947256274AE00CDD5DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AE6945256274AE00CDD5DB /* Main.storyboard */; };
 		04AE6949256274B000CDD5DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AE6948256274B000CDD5DB /* Assets.xcassets */; };
 		04AE694C256274B000CDD5DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AE694A256274B000CDD5DB /* LaunchScreen.storyboard */; };
+		1F1EE9849535B164D4200DB5 /* Pods_Grocery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF7C95CD864900BD69276B /* Pods_Grocery.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		04AE6948256274B000CDD5DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04AE694B256274B000CDD5DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04AE694D256274B000CDD5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BCFB118398FD2E47AA83316 /* Pods-Grocery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grocery.release.xcconfig"; path = "Target Support Files/Pods-Grocery/Pods-Grocery.release.xcconfig"; sourceTree = "<group>"; };
+		A7AF7C95CD864900BD69276B /* Pods_Grocery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grocery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9F04184F4690A27AC6B714D /* Pods-Grocery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grocery.debug.xcconfig"; path = "Target Support Files/Pods-Grocery/Pods-Grocery.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1EE9849535B164D4200DB5 /* Pods_Grocery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				04AE693E256274AE00CDD5DB /* Grocery */,
 				04AE693D256274AE00CDD5DB /* Products */,
+				956092F16E66BAE987186D60 /* Pods */,
+				C8AEF472A35B1DD9C491CF92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = Grocery;
 			sourceTree = "<group>";
 		};
+		956092F16E66BAE987186D60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9F04184F4690A27AC6B714D /* Pods-Grocery.debug.xcconfig */,
+				7BCFB118398FD2E47AA83316 /* Pods-Grocery.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C8AEF472A35B1DD9C491CF92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7AF7C95CD864900BD69276B /* Pods_Grocery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04AE6950256274B000CDD5DB /* Build configuration list for PBXNativeTarget "Grocery" */;
 			buildPhases = (
+				38613E60323239E4F796F22B /* [CP] Check Pods Manifest.lock */,
 				04AE6938256274AE00CDD5DB /* Sources */,
 				04AE6939256274AE00CDD5DB /* Frameworks */,
 				04AE693A256274AE00CDD5DB /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38613E60323239E4F796F22B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Grocery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04AE6938256274AE00CDD5DB /* Sources */ = {
@@ -283,6 +334,7 @@
 		};
 		04AE6951256274B000CDD5DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9F04184F4690A27AC6B714D /* Pods-Grocery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +354,7 @@
 		};
 		04AE6952256274B000CDD5DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BCFB118398FD2E47AA83316 /* Pods-Grocery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
