@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>code</key>
+        <dict>
+            <key>code1</key>
+            <string>6E9E8A664BFC07891170E1EF44862E50</string>
+            <key>code2</key>
+            <string>2002053BC2E0E08051A8A58899B76BF1</string>
+            <key>code3</key>
+            <string>FC09D2B2C57DDEE62944580EC63C668F</string>
+            <key>code4</key>
+            <string>EA9689901B64C8072ACE2B77CF1F0DEB</string>
+        </dict>
+        <key>client</key>
+        <dict>
+            <key>appType</key>
+            <string>9998</string>
+            <key>cp_id</key>
+            <string>890090000023105926</string>
+            <key>product_id</key>
+            <string>736430079244704961</string>
+            <key>client_id</key>
+            <string>497638327613129792</string>
+            <key>client_secret</key>
+            <string>[!001FEC079D1542D9208BAE1706BAC59A8CC0971CE787E139903A6846BA0655BD6E4C6B7C2D62270AD40E036B29310ECF10D2AE88AA37CFF50CF172436ACA7A6B2F57954705E9075F2295B81E8127D011E7B54AA4DE7BB77B4C240F401FA8F5747B]</string>
+            <key>project_id</key>
+            <string>736430079244704961</string>
+            <key>app_id</key>
+            <string>9105385871711271734</string>
+            <key>api_key</key>
+            <string>CgB6e3x9S58m4e+qznHDgavV76kjHrBhXCaTuEqMSsRhgdCBaamlCOlWhq/oCrGf8fbBeRFPU+UbwowVSBSS8Uch</string>
+            <key>package_name</key>
+            <string>com.ea.Grocery</string>
+        </dict>
+        <key>service</key>
+        <dict/>
+        <key>region</key>
+        <string/>
+    </dict>
+</plist>

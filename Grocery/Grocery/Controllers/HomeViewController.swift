@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HiAnalytics
 
 class HomeViewController: BaseViewController {
 
@@ -14,6 +15,7 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Home"
+        HiAnalytics.onEvent("screens", setParams: ["title" : self.title])
         // Do any additional setup after loading the view.
         collectionView.backgroundColor = lightGrayColor
         collectionView.dataSource = self
@@ -23,15 +25,15 @@ class HomeViewController: BaseViewController {
             layout.sectionHeadersPinToVisibleBounds = false // if you want to pin header view, set it true
             layout.minimumInteritemSpacing = 0
             layout.minimumLineSpacing = 16
-            let width = (collectionView.frame.width)/2 - 16
+            let width = (collectionView.frame.width)/2 - 8
             layout.itemSize = CGSize(width: width, height: width*5/4)
             layout.sectionInset = UIEdgeInsets(top: 16, left: 8, bottom: 16, right: 8)
         }
         
-        addStuff()
+        addGroceries()
     }
     
-    func addStuff() {
+    func addGroceries() {
         DataManager.shared.groceries = [
             GroceryItem("item1", "6ft Pre-lit Artificial Christmas Tree Alberta Spruce Clear Lights - Wondershop", price: 36),
             GroceryItem("item2", "Manscaped Lawn Mower 2.0 + Crop Preserver Essentials kit", price: 39.99),

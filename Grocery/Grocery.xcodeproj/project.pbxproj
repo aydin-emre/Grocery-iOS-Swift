@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		041FD35C2562BADF00CA1117 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FD35B2562BADF00CA1117 /* DataManager.swift */; };
+		049AC1D72563C5DB00C3EBB6 /* agconnect-services.plist in Resources */ = {isa = PBXBuildFile; fileRef = 049AC1D62563C5DB00C3EBB6 /* agconnect-services.plist */; };
 		04AE6940256274AE00CDD5DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE693F256274AE00CDD5DB /* AppDelegate.swift */; };
 		04AE6942256274AE00CDD5DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE6941256274AE00CDD5DB /* SceneDelegate.swift */; };
 		04AE6947256274AE00CDD5DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AE6945256274AE00CDD5DB /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		041FD35B2562BADF00CA1117 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		049AC1D62563C5DB00C3EBB6 /* agconnect-services.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "agconnect-services.plist"; sourceTree = "<group>"; };
 		04AE693C256274AE00CDD5DB /* Grocery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grocery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AE693F256274AE00CDD5DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04AE6941256274AE00CDD5DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				04AE6961256279FC00CDD5DB /* Storyboards */,
 				04AE695F256279EB00CDD5DB /* Resources */,
 				04AE694D256274B000CDD5DB /* Info.plist */,
+				049AC1D62563C5DB00C3EBB6 /* agconnect-services.plist */,
 			);
 			path = Grocery;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				04AE6939256274AE00CDD5DB /* Frameworks */,
 				04AE693A256274AE00CDD5DB /* Resources */,
 				BCAEE16A841ECAB5D9A0E93F /* [CP] Embed Pods Frameworks */,
+				998F40A7B63CB878C88D0263 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AE694C256274B000CDD5DB /* LaunchScreen.storyboard in Resources */,
+				049AC1D72563C5DB00C3EBB6 /* agconnect-services.plist in Resources */,
 				04AE6949256274B000CDD5DB /* Assets.xcassets in Resources */,
 				04AE6947256274AE00CDD5DB /* Main.storyboard in Resources */,
 			);
@@ -256,6 +261,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		998F40A7B63CB878C88D0263 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Grocery/Pods-Grocery-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Grocery/Pods-Grocery-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Grocery/Pods-Grocery-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BCAEE16A841ECAB5D9A0E93F /* [CP] Embed Pods Frameworks */ = {

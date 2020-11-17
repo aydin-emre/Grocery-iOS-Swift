@@ -7,5 +7,8 @@ target 'Grocery' do
 
   # Pods for Grocery
   pod 'EAAlert'
+  pod 'AGConnectCore'
+  pod 'HiAnalytics'
+  pod 'AGConnectCrash'
 
 end

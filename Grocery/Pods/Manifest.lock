@@ -1,16 +1,38 @@
 PODS:
+  - AGConnectCore (1.2.0.300):
+    - HMFoundation (~> 1.2.0)
+  - AGConnectCrash (1.2.0.300):
+    - AGConnectCredential (~> 1.2.0)
+  - AGConnectCredential (1.2.0.300):
+    - AGConnectCore (~> 1.2.0)
   - EAAlert (0.1.15)
+  - HiAnalytics (5.0.1.300):
+    - AGConnectCredential
+  - HMFoundation (1.2.0.300)
 
 DEPENDENCIES:
+  - AGConnectCore
+  - AGConnectCrash
   - EAAlert
+  - HiAnalytics
 
 SPEC REPOS:
   trunk:
+    - AGConnectCore
+    - AGConnectCrash
+    - AGConnectCredential
     - EAAlert
+    - HiAnalytics
+    - HMFoundation
 
 SPEC CHECKSUMS:
+  AGConnectCore: bc8f834f68067b86c4fea9e471f585cb2656cf90
+  AGConnectCrash: 5dfcaeaa0830c7f37da9f3088ed3daf2df5c662b
+  AGConnectCredential: a5d5f99fce45872fd35375ec1ae8017e282708f8
   EAAlert: ab6877a79a0ecafba9627cf4d20bfe37efd88e02
+  HiAnalytics: ba1ee39637a346e0964f87fb00a665dd686874e9
+  HMFoundation: b8132ac8bbb79e6b2dd26a8ca013c22aff53f384
 
-PODFILE CHECKSUM: a67deab05228d8ce1420db93953f61322239bc14
+PODFILE CHECKSUM: 4ac8a90af166fca7480b23c43943f7535f483486
 
 COCOAPODS: 1.10.0
