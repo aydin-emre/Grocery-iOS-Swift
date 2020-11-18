@@ -30,7 +30,12 @@ class ProductDetailViewController: BaseViewController {
         
         addButton.round()
         
-        HiAnalytics.onEvent(kViewProduct, setParams: ["productId" : product.id!])
+        HiAnalytics.onEvent(kViewProduct, setParams: [kProductId : product.id!])
+        HiAnalytics.onEvent(kViewProduct, setParams: [kProductName : product.title!])
+        
+        imageView.image = UIImage(named: product.image)
+        titleLabel.text = product.title
+        priceLabel.text = String(format: "$%.2f", product.price)
     }
     
 
@@ -45,7 +50,9 @@ class ProductDetailViewController: BaseViewController {
     */
     
     @IBAction func addButton(_ sender: UIButton) {
-        
+        DataManager.shared.cart.append(product)
+        let productId = product.id!
+        HiAnalytics.onEvent(kAddProduct2Cart, setParams: [kProductId : productId])
     }
     
 }

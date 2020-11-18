@@ -16,6 +16,8 @@ class CartViewController: BaseViewController {
     
     @IBOutlet var checkoutContainerView: UIView!
     
+    @IBOutlet var totalPriceLabel: UILabel!
+    
     @IBOutlet var checkoutButton: UIButton!
     
     override func viewDidLoad() {
@@ -55,24 +57,30 @@ class CartViewController: BaseViewController {
         checkoutContainerView.isHidden = isCartEmpty
         collectionView.isHidden = isCartEmpty
         collectionView.reloadData()
+        
+        let sumOfPrices = DataManager.shared.cart.reduce(0) { $0 + $1.price }
+        totalPriceLabel.text = "Total: \(String(format: "$%.2f", sumOfPrices))"
     }
     
     func removeFromCart(_ row: Int)  {
         let productId = DataManager.shared.cart[row].id!
-        HiAnalytics.onEvent(kDelProductFromCart, setParams: ["productId" : productId])
+        HiAnalytics.onEvent(kDelProductFromCart, setParams: [kProductId : productId])
         DataManager.shared.cart.remove(at: row)
         reloadList()
     }
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "segueProductDetail" {
+            let row = sender as! Int
+            let eatc = segue.destination as! ProductDetailViewController
+            eatc.product = DataManager.shared.cart[row]
+        }
     }
-    */
 
 }
 
@@ -94,6 +102,10 @@ extension CartViewController: UICollectionViewDataSource, UICollectionViewDelega
         cell.priceLabel.text = String(format: "$%.2f", groceryItem.price)
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "segueProductDetail", sender: indexPath.row)
     }
     
 }

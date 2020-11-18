@@ -31,6 +31,7 @@ class HomeViewController: BaseViewController {
         }
         
         addGroceries()
+        
     }
     
     func addGroceries() {
@@ -56,25 +57,29 @@ class HomeViewController: BaseViewController {
             GroceryItem(19, "item19", "Logitech Mouse - Black (M185)", price: 12.99),
             GroceryItem(20, "item20", "Panasonic DECT 6.0 Plus Cordless Phone System (KX-TGC222S) with Answering Machine - Silver", price: 39.99)
         ]
-        
+        DataManager.shared.groceries.shuffle()
         collectionView.reloadData()
     }
     
     func addToCart(_ row: Int)  {
         DataManager.shared.cart.append(DataManager.shared.groceries[row])
         let productId = DataManager.shared.groceries[row].id!
-        HiAnalytics.onEvent(kAddProduct2Cart, setParams: ["productId" : productId])
+        HiAnalytics.onEvent(kAddProduct2Cart, setParams: [kProductId : productId])
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "segueProductDetail" {
+            let row = sender as! Int
+            let eatc = segue.destination as! ProductDetailViewController
+            eatc.product = DataManager.shared.groceries[row]
+        }
     }
-    */
 
 }
 
@@ -96,6 +101,10 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         cell.priceLabel.text = String(format: "$%.2f", groceryItem.price)
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "segueProductDetail", sender: indexPath.row)
     }
     
 }
