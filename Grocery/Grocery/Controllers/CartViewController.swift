@@ -10,15 +10,20 @@ import HiAnalytics
 
 class CartViewController: BaseViewController {
     
+    @IBOutlet var messageLabel: UILabel!
+    
     @IBOutlet var collectionView: UICollectionView!
     
-
+    @IBOutlet var checkoutContainerView: UIView!
+    
+    @IBOutlet var checkoutButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Cart"
-        HiAnalytics.onEvent("screens", setParams: ["title" : self.title])
+        HiAnalytics.onEvent("screens", setParams: ["title" : self.title!])
         // Do any additional setup after loading the view.
-        collectionView.backgroundColor = lightGrayColor
+        collectionView.backgroundColor = bgColor
         collectionView.dataSource = self
         collectionView.delegate = self
         
@@ -31,9 +36,34 @@ class CartViewController: BaseViewController {
             layout.sectionInset = UIEdgeInsets(top: 16, left: 8, bottom: 16, right: 8)
         }
         
+        checkoutButton.round()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
 
+        reloadList()
+    }
+    
+    @IBAction func checkoutButton(_ sender: UIButton) {
+        
+    }
+    
+    func reloadList() {
+        let isCartEmpty = DataManager.shared.cart.count == 0
+        messageLabel.isHidden = !isCartEmpty
+        checkoutContainerView.isHidden = isCartEmpty
+        collectionView.isHidden = isCartEmpty
+        collectionView.reloadData()
+    }
+    
+    func removeFromCart(_ row: Int)  {
+        let productId = DataManager.shared.cart[row].id!
+        HiAnalytics.onEvent(kDelProductFromCart, setParams: ["productId" : productId])
+        DataManager.shared.cart.remove(at: row)
+        reloadList()
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -51,14 +81,14 @@ class CartViewController: BaseViewController {
 extension CartViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return DataManager.shared.groceries.count
+        return DataManager.shared.cart.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as! HomeCollectionViewCell
-//        cell.delegate = self
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CartCollectionViewCell", for: indexPath) as! CartCollectionViewCell
+        cell.delegate = self
         
-        let groceryItem = DataManager.shared.groceries[indexPath.row]
+        let groceryItem = DataManager.shared.cart[indexPath.row]
         cell.imageView.image = UIImage(named: groceryItem.image)
         cell.titleLabel.text = groceryItem.title
         cell.priceLabel.text = String(format: "$%.2f", groceryItem.price)
@@ -66,8 +96,16 @@ extension CartViewController: UICollectionViewDataSource, UICollectionViewDelega
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+}
+
+// MARK: - CartCollectionViewCellDelegate
+
+extension CartViewController: CartCollectionViewCellDelegate {
+    
+    func removeButtonTapped(_ cell: UICollectionViewCell) {
+        if let indexPath = self.collectionView.indexPath(for: cell) {
+            removeFromCart(indexPath.row)
+        }
     }
     
 }

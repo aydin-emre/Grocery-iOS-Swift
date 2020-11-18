@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol HomeCollectionViewCellDelegate {
+    func addButtonTapped(_ cell: UICollectionViewCell)
+}
+
 class HomeCollectionViewCell: UICollectionViewCell {
+    
+    var delegate: HomeCollectionViewCellDelegate?
     
     @IBOutlet var imageView: UIImageView!
     
@@ -23,9 +29,8 @@ class HomeCollectionViewCell: UICollectionViewCell {
         addButton.round()
     }
     
-    
     @IBAction func addButton(_ sender: UIButton) {
-        
+        delegate?.addButtonTapped(self)
     }
     
 }

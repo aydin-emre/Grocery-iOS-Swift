@@ -12,6 +12,6 @@ class DataManager: NSObject {
     static var shared: DataManager = DataManager()
     
     var groceries = [GroceryItem]()
-    var carts = [GroceryItem]()
+    var cart = [GroceryItem]()
     
 }
