@@ -7,6 +7,7 @@
 
 import UIKit
 import HiAnalytics
+import ScanKitFrameWork
 
 class CartViewController: BaseViewController {
     
@@ -19,6 +20,8 @@ class CartViewController: BaseViewController {
     @IBOutlet var totalPriceLabel: UILabel!
     
     @IBOutlet var checkoutButton: UIButton!
+    
+    var totalAmount = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,14 +44,14 @@ class CartViewController: BaseViewController {
         checkoutButton.round()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
         reloadList()
     }
     
     @IBAction func checkoutButton(_ sender: UIButton) {
-        
+        scanQR()
     }
     
     func reloadList() {
@@ -58,8 +61,8 @@ class CartViewController: BaseViewController {
         collectionView.isHidden = isCartEmpty
         collectionView.reloadData()
         
-        let sumOfPrices = DataManager.shared.cart.reduce(0) { $0 + $1.price }
-        totalPriceLabel.text = "Total: \(String(format: "$%.2f", sumOfPrices))"
+        totalAmount = DataManager.shared.cart.reduce(0) { $0 + $1.price }
+        totalPriceLabel.text = "Total: \(String(format: "$%.2f", totalAmount))"
     }
     
     func removeFromCart(_ row: Int)  {
@@ -67,6 +70,33 @@ class CartViewController: BaseViewController {
         HiAnalytics.onEvent(kDelProductFromCart, setParams: [kProductId : productId])
         DataManager.shared.cart.remove(at: row)
         reloadList()
+    }
+    
+    func scanQR() {
+        let options = HmsScanOptions(scanFormatType: 0, photo: false)
+        if let hmsDefaultScanViewController = HmsDefaultScanViewController(defaultScanWithFormatType: options) {
+            hmsDefaultScanViewController.defaultScanDelegate = self
+            
+            self.view.addSubview(hmsDefaultScanViewController.view)
+            self.addChild(hmsDefaultScanViewController)
+            self.didMove(toParent: hmsDefaultScanViewController)
+        }
+    }
+    
+    func parseResult(_ dictionary: [AnyHashable : Any]?) {
+        if let dictionary = dictionary, let text = dictionary["text"] {
+            let resultText = text as! String
+            
+            DispatchQueue.main.async {
+                let isPaymentSuccessful = resultText == "com.ea.Grocery"
+                self.performSegue(withIdentifier: "seguePaymentResult", sender: isPaymentSuccessful)
+                if isPaymentSuccessful {
+                    DataManager.shared.cart.removeAll()
+                }
+            }
+        } else {
+            print("*** Scanning code not recognized!")
+        }
     }
     
     // MARK: - Navigation
@@ -79,6 +109,11 @@ class CartViewController: BaseViewController {
             let row = sender as! Int
             let eatc = segue.destination as! ProductDetailViewController
             eatc.product = DataManager.shared.cart[row]
+        } else if segue.identifier == "seguePaymentResult" {
+            let isPaymentSuccessful = sender as! Bool
+            let eatc = segue.destination as! PaymentResultViewController
+            eatc.isPaymentSuccessful = isPaymentSuccessful
+            eatc.paymentAmount = totalAmount
         }
     }
 
@@ -118,6 +153,20 @@ extension CartViewController: CartCollectionViewCellDelegate {
         if let indexPath = self.collectionView.indexPath(for: cell) {
             removeFromCart(indexPath.row)
         }
+    }
+    
+}
+
+// DefaultView Delegate
+extension CartViewController: DefaultScanDelegate {
+    
+    func defaultScanImagePickerDelegate(for image: UIImage!) {
+        let dic = HmsBitMap.bitMap(for: image, with: HmsScanOptions(scanFormatType: 0, photo: true))
+        parseResult(dic)
+    }
+    
+    func defaultScanDelegate(forDicResult resultDic: [AnyHashable : Any]!) {
+        parseResult(resultDic)
     }
     
 }

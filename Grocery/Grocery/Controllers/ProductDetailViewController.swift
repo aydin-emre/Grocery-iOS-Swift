@@ -24,7 +24,7 @@ class ProductDetailViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Cart"
+        self.title = "Product Detail"
         HiAnalytics.onEvent("screens", setParams: ["title" : self.title!])
         // Do any additional setup after loading the view.
         

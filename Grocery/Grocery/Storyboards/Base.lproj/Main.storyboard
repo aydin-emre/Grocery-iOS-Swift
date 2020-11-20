@@ -374,24 +374,63 @@
                         <outlet property="messageLabel" destination="19S-DL-jsg" id="Aph-h0-Dcd"/>
                         <outlet property="totalPriceLabel" destination="sFi-PA-Ppu" id="BEu-IX-Zqy"/>
                         <segue destination="JVS-Pu-u8b" kind="show" identifier="segueProductDetail" id="AYY-rI-Pb3"/>
-                        <segue destination="KHx-wF-XFK" kind="show" id="qsS-KP-Bw0"/>
+                        <segue destination="KHx-wF-XFK" kind="show" identifier="seguePaymentResult" id="qsS-KP-Bw0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YRa-fg-NEs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2037.68115942029" y="515.625"/>
         </scene>
-        <!--View Controller-->
+        <!--Payment Result View Controller-->
         <scene sceneID="Z3u-fg-Zfe">
             <objects>
-                <viewController id="KHx-wF-XFK" sceneMemberID="viewController">
+                <viewController id="KHx-wF-XFK" customClass="PaymentResultViewController" customModule="Grocery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qKn-qR-U6Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="kRk-Ox-Ny2">
+                                <rect key="frame" x="55.5" y="334" width="303.5" height="228"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Successful" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2E-b5-xvg">
+                                        <rect key="frame" x="0.0" y="0.0" width="303.5" height="39.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="33"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="D81-CT-06k">
+                                        <rect key="frame" x="0.0" y="139.5" width="303.5" height="88.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGN-wR-IYk">
+                                                <rect key="frame" x="0.0" y="0.0" width="303.5" height="27.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 40.85" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxd-UT-Z0b">
+                                                <rect key="frame" x="0.0" y="35.5" width="303.5" height="53"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="44"/>
+                                                <color key="textColor" red="0.64705882349999999" green="0.094117647060000004" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="QWG-yy-rMP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kRk-Ox-Ny2" firstAttribute="centerY" secondItem="qKn-qR-U6Z" secondAttribute="centerY" id="ols-0F-LCd"/>
+                            <constraint firstItem="kRk-Ox-Ny2" firstAttribute="centerX" secondItem="qKn-qR-U6Z" secondAttribute="centerX" id="pT1-1h-LNZ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0bF-kg-4cA"/>
+                    <connections>
+                        <outlet property="paymentAmountLabel" destination="bxd-UT-Z0b" id="W72-pM-Zbd"/>
+                        <outlet property="paymentAmountTitleLabel" destination="NGN-wR-IYk" id="AVe-tP-f8Z"/>
+                        <outlet property="paymentResultLabel" destination="Q2E-b5-xvg" id="tqK-Fy-jEB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2V8-Hb-oZr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

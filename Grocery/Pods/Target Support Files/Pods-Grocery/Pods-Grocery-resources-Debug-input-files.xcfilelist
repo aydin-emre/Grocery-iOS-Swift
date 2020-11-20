@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-Grocery/Pods-Grocery-resources.sh
 ${PODS_ROOT}/AGConnectCredential/AGConnectCredential.framework/AGCResources.bundle
 ${PODS_ROOT}/HiAnalytics/HiAnalytics.framework/HiAnalytics.bundle
+${PODS_ROOT}/ScanKitFrameWork/scansdk-ios-tool-1.0.2.300/ScanKitFrameWorkBundle.bundle

@@ -10,5 +10,6 @@ target 'Grocery' do
   pod 'AGConnectCore'
   pod 'HiAnalytics'
   pod 'AGConnectCrash'
+  pod 'ScanKitFrameWork'
 
 end

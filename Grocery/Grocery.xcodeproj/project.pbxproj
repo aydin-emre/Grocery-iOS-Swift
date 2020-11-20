@@ -23,6 +23,7 @@
 		04AE698225629C8600CDD5DB /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE698125629C8600CDD5DB /* HomeCollectionViewCell.swift */; };
 		04AE69862562A0E500CDD5DB /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE69852562A0E500CDD5DB /* UIViewExtension.swift */; };
 		04CA8D4D2565466500F352C1 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8D4C2565466500F352C1 /* ProductDetailViewController.swift */; };
+		04CCF1E32566944700A709B8 /* PaymentResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCF1E22566944700A709B8 /* PaymentResultViewController.swift */; };
 		1F1EE9849535B164D4200DB5 /* Pods_Grocery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF7C95CD864900BD69276B /* Pods_Grocery.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		04AE698125629C8600CDD5DB /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		04AE69852562A0E500CDD5DB /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		04CA8D4C2565466500F352C1 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		04CCF1E22566944700A709B8 /* PaymentResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentResultViewController.swift; sourceTree = "<group>"; };
 		7BCFB118398FD2E47AA83316 /* Pods-Grocery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grocery.release.xcconfig"; path = "Target Support Files/Pods-Grocery/Pods-Grocery.release.xcconfig"; sourceTree = "<group>"; };
 		A7AF7C95CD864900BD69276B /* Pods_Grocery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grocery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F04184F4690A27AC6B714D /* Pods-Grocery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grocery.debug.xcconfig"; path = "Target Support Files/Pods-Grocery/Pods-Grocery.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				04AE696E25627D5C00CDD5DB /* HomeViewController.swift */,
 				04AE697125627D6300CDD5DB /* CartViewController.swift */,
 				04CA8D4C2565466500F352C1 /* ProductDetailViewController.swift */,
+				04CCF1E22566944700A709B8 /* PaymentResultViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				041FD35C2562BADF00CA1117 /* DataManager.swift in Sources */,
 				049AC1EB2563F5CE00C3EBB6 /* CartCollectionViewCell.swift in Sources */,
 				04AE697225627D6300CDD5DB /* CartViewController.swift in Sources */,
+				04CCF1E32566944700A709B8 /* PaymentResultViewController.swift in Sources */,
 				04AE6940256274AE00CDD5DB /* AppDelegate.swift in Sources */,
 				04CA8D4D2565466500F352C1 /* ProductDetailViewController.swift in Sources */,
 				04AE6942256274AE00CDD5DB /* SceneDelegate.swift in Sources */,

@@ -9,7 +9,7 @@
 /* Begin PBXAggregateTarget section */
 		050CD8D686878C1A3E4282F4BCA08E00 /* HMFoundation */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = EE16698D106FF1CDC69EFABC2E74D3C5 /* Build configuration list for PBXAggregateTarget "HMFoundation" */;
+			buildConfigurationList = B019E442447952C314796C8501EA9DD6 /* Build configuration list for PBXAggregateTarget "HMFoundation" */;
 			buildPhases = (
 			);
 			dependencies = (
@@ -22,7 +22,7 @@
 			buildPhases = (
 			);
 			dependencies = (
-				01E19C05AA4B360DA48C4A6238E6A768 /* PBXTargetDependency */,
+				433465CF0A688B3CAC2E2A63C28BEC2D /* PBXTargetDependency */,
 			);
 			name = HiAnalytics;
 		};
@@ -32,17 +32,17 @@
 			buildPhases = (
 			);
 			dependencies = (
-				C71301CA19DDD19B1F8BE7462CEF8A1E /* PBXTargetDependency */,
+				089F8D9AFA6EF93A2EA76ED2AA927795 /* PBXTargetDependency */,
 			);
 			name = AGConnectCore;
 		};
 		3688C08B8DBB2E0DAC0AAFB09207BDAA /* AGConnectCredential */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = B770C6DDBCC4B07BA0A57C997369313D /* Build configuration list for PBXAggregateTarget "AGConnectCredential" */;
+			buildConfigurationList = 74174A1EB5264D21BD59FC9B573A25B3 /* Build configuration list for PBXAggregateTarget "AGConnectCredential" */;
 			buildPhases = (
 			);
 			dependencies = (
-				C3A7A4D9FEEF322C3FA6826044017B28 /* PBXTargetDependency */,
+				C2C1DBB9C30EB4DFD0A6672090230036 /* PBXTargetDependency */,
 			);
 			name = AGConnectCredential;
 		};
@@ -52,147 +52,167 @@
 			buildPhases = (
 			);
 			dependencies = (
-				80F59961700978906648FA37CCB82EDE /* PBXTargetDependency */,
+				92D51AC2A4887AA1F0C3EF1F85588C51 /* PBXTargetDependency */,
 			);
 			name = AGConnectCrash;
+		};
+		C81EC52488B257A8F998BC66A070B212 /* ScanKitFrameWork */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5483BF646BD3EF4364E6CFDC15454FBF /* Build configuration list for PBXAggregateTarget "ScanKitFrameWork" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = ScanKitFrameWork;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		00C6476DF70A5F4A9B338B7D18FAEF81 /* EAAlert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A22A01B04194AF90E787DBB6DE1542 /* EAAlert-dummy.m */; };
+		00C6476DF70A5F4A9B338B7D18FAEF81 /* EAAlert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EF511BAB90AC846800A7D91ADA5972 /* EAAlert-dummy.m */; };
+		07850FB1EC7E13E201BC0436223EEC9F /* Pods-Grocery-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C721B555D9414BD5BB76D479F215C680 /* Pods-Grocery-dummy.m */; };
 		392C4B9A76E0953609DD5B6A992AB88D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		49AB70D939D18A7AA27259164E235EE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		5B8576F3075C148571922D4CAFFE37BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDEFDCC03C21BFDD4FCE8A58B73C6A07 /* Images.xcassets */; };
-		650D02B7B4C3A6879F21F11BE0029F49 /* EAAlert-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1048DA7376A4BAA85428B0CCB1B556AF /* EAAlert-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4E20CF7FAB3ED7B0F48BCB295EEE270 /* Pods-Grocery-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C721B555D9414BD5BB76D479F215C680 /* Pods-Grocery-dummy.m */; };
-		BBB29C0A2668B59DE6675F2208CFF02F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D17977534D5C2B0847A58596C4EBB73 /* StringExtension.swift */; };
-		C400FB8F6EC4B43A0E513590ED609C55 /* Pods-Grocery-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AB9147FB800A9B30AA2922FF539DE81 /* Pods-Grocery-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F11C7058BF1CBD295CEBE9F63D7843BC /* EAAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425A20FC94DA9C1435974C50375E798C /* EAAlert.swift */; };
+		5B8576F3075C148571922D4CAFFE37BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F5204BD63B839FF80FDAC03366B2C4 /* Images.xcassets */; };
+		650D02B7B4C3A6879F21F11BE0029F49 /* EAAlert-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81E14B75A34F79A20D186AC83E0473E5 /* EAAlert-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95CECB6F899F87C465735AB384C0BD28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BBB29C0A2668B59DE6675F2208CFF02F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700254BFD6E08CC7D671B7A9EAD0ACC /* StringExtension.swift */; };
+		EBBB1CBE0E40E3D765772ABBB4AB50BD /* Pods-Grocery-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AB9147FB800A9B30AA2922FF539DE81 /* Pods-Grocery-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F11C7058BF1CBD295CEBE9F63D7843BC /* EAAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A43295EC9E63ABCE43134ABBA06CCA /* EAAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		462BBF2CC4D180F767ABCCE20C754656 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2A070B3F458158122F5C2B948726944F;
-			remoteInfo = HiAnalytics;
-		};
-		47A594A9B3BEE1BF4EFE1AC56A72CF82 /* PBXContainerItemProxy */ = {
+		2FC39681AB1DC48C04C17FEAC1A6CEAA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3688C08B8DBB2E0DAC0AAFB09207BDAA;
 			remoteInfo = AGConnectCredential;
 		};
-		59DD6ACAC114F0E78AD320A710289A53 /* PBXContainerItemProxy */ = {
+		4468DD52633500BAAC7204BC6350AE7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C81EC52488B257A8F998BC66A070B212;
+			remoteInfo = ScanKitFrameWork;
+		};
+		467D80AB071C6BBBA8AE5C604F9024E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 050CD8D686878C1A3E4282F4BCA08E00;
+			remoteInfo = HMFoundation;
+		};
+		4A0EFAAB326D6164C5A60250FFAE1286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3688C08B8DBB2E0DAC0AAFB09207BDAA;
+			remoteInfo = AGConnectCredential;
+		};
+		76F18CFC9F11AB4AF4C02CA2384E721B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3F3CA1D88ACAD539E613D4F6B1409530;
 			remoteInfo = AGConnectCrash;
 		};
-		61B8FDB964732A88F86ED8D86B423516 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 32ACCC280C838779A9622A4E54C8025A;
-			remoteInfo = AGConnectCore;
-		};
-		A3D606CDFC675450A776F0B96D312AA5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3688C08B8DBB2E0DAC0AAFB09207BDAA;
-			remoteInfo = AGConnectCredential;
-		};
-		AB0ED4A21A3F063C167608CEAA985DC0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 050CD8D686878C1A3E4282F4BCA08E00;
-			remoteInfo = HMFoundation;
-		};
-		B1DE5B885AE698BEBB3D023BC5BFC492 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3688C08B8DBB2E0DAC0AAFB09207BDAA;
-			remoteInfo = AGConnectCredential;
-		};
-		C4FBA7876554F0A23B2936242CA06127 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 32ACCC280C838779A9622A4E54C8025A;
-			remoteInfo = AGConnectCore;
-		};
-		EBF66CCDDB781B46347B6F110C7C9DCB /* PBXContainerItemProxy */ = {
+		83204604412813A1AC160A740807AAE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 93631E31567C2F3EA4F07758F46C1FBF;
 			remoteInfo = EAAlert;
 		};
-		FEBB8002279BDECA760D0DC2C2C884DF /* PBXContainerItemProxy */ = {
+		A7FC917678E19368ED2FEEEE4B4E45EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3688C08B8DBB2E0DAC0AAFB09207BDAA;
+			remoteInfo = AGConnectCredential;
+		};
+		AF9CE6C48BF06F1FC4A07196BC5C3060 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32ACCC280C838779A9622A4E54C8025A;
+			remoteInfo = AGConnectCore;
+		};
+		B45ED929E3B05173E6E7C7197B631719 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 050CD8D686878C1A3E4282F4BCA08E00;
 			remoteInfo = HMFoundation;
 		};
+		D469BFA7046CE41F65D3A748C59A6C23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A070B3F458158122F5C2B948726944F;
+			remoteInfo = HiAnalytics;
+		};
+		F606296202A73359E08FF6C51C3DF36E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32ACCC280C838779A9622A4E54C8025A;
+			remoteInfo = AGConnectCore;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D17977534D5C2B0847A58596C4EBB73 /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = EAAlert/Classes/StringExtension.swift; sourceTree = "<group>"; };
-		1048DA7376A4BAA85428B0CCB1B556AF /* EAAlert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EAAlert-umbrella.h"; sourceTree = "<group>"; };
-		22EDD5CD54EEE1E917A3E5290D682E99 /* AGConnectCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AGConnectCore.release.xcconfig; sourceTree = "<group>"; };
-		28E7DD2A6A11238C25778DED90E53A0F /* HiAnalytics.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = HiAnalytics.bundle; path = HiAnalytics.framework/HiAnalytics.bundle; sourceTree = "<group>"; };
-		2A4BD89339417D5FD0230696EC820C78 /* AGConnectCredential.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AGConnectCredential.debug.xcconfig; sourceTree = "<group>"; };
+		08D0F92C11B5504DE64AC2BE294B0D92 /* AGConnectCredential.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AGConnectCredential.release.xcconfig; sourceTree = "<group>"; };
+		0B420D9C6AABE6421A19CA56D227DB34 /* ScanKitFrameWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScanKitFrameWork.debug.xcconfig; sourceTree = "<group>"; };
+		112E8F59D759691E5C2DECED122FD8C7 /* EAAlert-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EAAlert-Info.plist"; sourceTree = "<group>"; };
+		1C1F695610D2171A5C231908E8CC827E /* EAAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EAAlert.modulemap; sourceTree = "<group>"; };
+		1CFCEC93E818864257CD41DFE282D62B /* EAAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EAAlert-prefix.pch"; sourceTree = "<group>"; };
 		2FAF5C5A4DCFBBF1D49FB5746AFA9116 /* Pods-Grocery-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Grocery-Info.plist"; sourceTree = "<group>"; };
-		31E24EEFE362B9A5041617E741BA3254 /* AGConnectCrash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AGConnectCrash.debug.xcconfig; sourceTree = "<group>"; };
-		425A20FC94DA9C1435974C50375E798C /* EAAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EAAlert.swift; path = EAAlert/Classes/EAAlert.swift; sourceTree = "<group>"; };
-		42BFA33D6A841A70131F2B9AA2A0EC14 /* HMFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HMFoundation.debug.xcconfig; sourceTree = "<group>"; };
+		3068A3F78F372D88754C1395886D4960 /* ScanKitFrameWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScanKitFrameWork.release.xcconfig; sourceTree = "<group>"; };
+		375A1354E7A6788288A1C675CEFEDB98 /* HMFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HMFoundation.debug.xcconfig; sourceTree = "<group>"; };
+		3B76C247D05C966961BC0F797E364EA1 /* HMFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HMFoundation.framework; sourceTree = "<group>"; };
+		3C65568DC8D46AE94F2AA92725FB65ED /* EAAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EAAlert.debug.xcconfig; sourceTree = "<group>"; };
+		3E70ADE8A7CCE10C263DE3B960786158 /* HiAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HiAnalytics.framework; sourceTree = "<group>"; };
+		43C7BE2261BD7DE550513371EC4593BB /* AGConnectCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AGConnectCore.framework; sourceTree = "<group>"; };
 		449A370B73EAEB7A7E6E0D8732D4E268 /* Pods-Grocery.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Grocery.modulemap"; sourceTree = "<group>"; };
 		543BB28F96BD9174FF8AB05BA738B5AE /* Pods-Grocery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Grocery.release.xcconfig"; sourceTree = "<group>"; };
+		56EF511BAB90AC846800A7D91ADA5972 /* EAAlert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EAAlert-dummy.m"; sourceTree = "<group>"; };
 		57C24978253A4C5D2873CF129F9497F6 /* Pods-Grocery-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Grocery-frameworks.sh"; sourceTree = "<group>"; };
-		5BC22E6F40C4C7359900F78D4C7EA952 /* EAAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EAAlert.debug.xcconfig; sourceTree = "<group>"; };
-		6063E002ABA0A7AEF41ADE7F3F564E76 /* AGCResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AGCResources.bundle; path = AGConnectCredential.framework/AGCResources.bundle; sourceTree = "<group>"; };
-		60E3DD927AA30F747A9699324F22C125 /* HMFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HMFoundation.release.xcconfig; sourceTree = "<group>"; };
-		62C555652BB4A88056751DDBFC9CC14E /* AGConnectCrash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AGConnectCrash.framework; sourceTree = "<group>"; };
+		57F10E37D61DBE4FB968267CCBC02B3F /* ScanKitFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScanKitFrameWork.framework; path = "scansdk-ios-tool-1.0.2.300/ScanKitFrameWork.framework"; sourceTree = "<group>"; };
+		5AB69BEC0933DB493A4D59813F6874F7 /* AGConnectCrash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AGConnectCrash.release.xcconfig; sourceTree = "<group>"; };
 		63B9645345E84189A1B0003E85F4D112 /* EAAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EAAlert.framework; path = EAAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		656A5E71EF01358B8EAA6960D3BD9C80 /* HiAnalytics.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = HiAnalytics.bundle; path = HiAnalytics.framework/HiAnalytics.bundle; sourceTree = "<group>"; };
 		6585F682EFDD90723B6D4F655D6C5752 /* Pods-Grocery-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Grocery-acknowledgements.plist"; sourceTree = "<group>"; };
 		69ED6A758184BEBF8F2C378F4A79BE37 /* Pods-Grocery-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Grocery-resources.sh"; sourceTree = "<group>"; };
+		6EF53E68D3BA0342FD8C5993C5628AD0 /* EAAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EAAlert.release.xcconfig; sourceTree = "<group>"; };
+		6F00B07F6E279EB4F76B66E191F5EC5A /* AGConnectCrash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AGConnectCrash.debug.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7D3F86BCB09710E50AE95D268E049E43 /* AGConnectCredential.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AGConnectCredential.release.xcconfig; sourceTree = "<group>"; };
 		7F40D964155DD89E4F28819F48B8E3C3 /* Pods-Grocery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Grocery.debug.xcconfig"; sourceTree = "<group>"; };
-		864BE2CA40D6AD9F263F32DB1B5F424C /* EAAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EAAlert.release.xcconfig; sourceTree = "<group>"; };
+		81E14B75A34F79A20D186AC83E0473E5 /* EAAlert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EAAlert-umbrella.h"; sourceTree = "<group>"; };
 		8AB9147FB800A9B30AA2922FF539DE81 /* Pods-Grocery-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Grocery-umbrella.h"; sourceTree = "<group>"; };
-		93E7D399D4653034375D216232A38D8D /* EAAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EAAlert-prefix.pch"; sourceTree = "<group>"; };
-		97DBDEC50A5A6A61569BD92F13372C30 /* AGConnectCredential.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AGConnectCredential.framework; sourceTree = "<group>"; };
-		9B49DEF4D8189A20A75F723E2263701C /* HiAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HiAnalytics.debug.xcconfig; sourceTree = "<group>"; };
+		9410F9BCC4CE38A3BB82A7601C510442 /* AGConnectCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AGConnectCore.debug.xcconfig; sourceTree = "<group>"; };
+		99A43295EC9E63ABCE43134ABBA06CCA /* EAAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EAAlert.swift; path = EAAlert/Classes/EAAlert.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1F5204BD63B839FF80FDAC03366B2C4 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = EAAlert/Assets/Images.xcassets; sourceTree = "<group>"; };
 		A27F78081139E6BC96E7CB07D2282E22 /* Pods_Grocery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Grocery.framework; path = "Pods-Grocery.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2126C687EC16DDEE2CEB74E473D3F09 /* EAAlert-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EAAlert-Info.plist"; sourceTree = "<group>"; };
-		B416434BD4943187124D8E3388E5B67A /* HMFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HMFoundation.framework; sourceTree = "<group>"; };
-		B4412447EEE6F706B62E385203C0FEC7 /* HiAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HiAnalytics.release.xcconfig; sourceTree = "<group>"; };
-		B546B6A0FD74CAA57EC92EBCE5A8CD3E /* HiAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HiAnalytics.framework; sourceTree = "<group>"; };
+		AFD4B0C715D6BCEF40CCCAE1024EBA73 /* AGCResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AGCResources.bundle; path = AGConnectCredential.framework/AGCResources.bundle; sourceTree = "<group>"; };
+		B1BDE429A2004CE00322DF66F46CCA44 /* HiAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HiAnalytics.debug.xcconfig; sourceTree = "<group>"; };
+		B700254BFD6E08CC7D671B7A9EAD0ACC /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = EAAlert/Classes/StringExtension.swift; sourceTree = "<group>"; };
+		B885D7832BB5220A2AC8996A7E67A643 /* HiAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HiAnalytics.release.xcconfig; sourceTree = "<group>"; };
 		BCD5AFAF6AFFBAF8CA8C0163A15B8CDF /* Pods-Grocery-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Grocery-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C38857BEE55D135D4F50096778E746E8 /* AGConnectCrash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AGConnectCrash.framework; sourceTree = "<group>"; };
+		C50B6951A0DF42894D8D5D30BB7B74F9 /* AGConnectCredential.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AGConnectCredential.debug.xcconfig; sourceTree = "<group>"; };
 		C721B555D9414BD5BB76D479F215C680 /* Pods-Grocery-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Grocery-dummy.m"; sourceTree = "<group>"; };
-		D5E1E34DA2F8C2C636D91337B5BEAB35 /* AGConnectCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AGConnectCore.debug.xcconfig; sourceTree = "<group>"; };
-		DA825E109A12B710D7BD7E692159525B /* AGConnectCrash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AGConnectCrash.release.xcconfig; sourceTree = "<group>"; };
-		DD33CC11B5B3F2B1F1F01B769AC264A2 /* AGConnectCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AGConnectCore.framework; sourceTree = "<group>"; };
-		DDEFDCC03C21BFDD4FCE8A58B73C6A07 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = EAAlert/Assets/Images.xcassets; sourceTree = "<group>"; };
-		E303CDD2360186776D8016C05E1AD8C8 /* EAAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EAAlert.modulemap; sourceTree = "<group>"; };
-		E4A22A01B04194AF90E787DBB6DE1542 /* EAAlert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EAAlert-dummy.m"; sourceTree = "<group>"; };
+		EEDB6284656E777E8307AF92BF658908 /* HMFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HMFoundation.release.xcconfig; sourceTree = "<group>"; };
+		F167977CCC26493114228AD4C9AE1890 /* ScanKitFrameWorkBundle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ScanKitFrameWorkBundle.bundle; path = "scansdk-ios-tool-1.0.2.300/ScanKitFrameWorkBundle.bundle"; sourceTree = "<group>"; };
+		F1D1F6F891760ED4A62723FB1107EC54 /* AGConnectCredential.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AGConnectCredential.framework; sourceTree = "<group>"; };
+		F97F554304CD3EC61A74097D15D80D35 /* AGConnectCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AGConnectCore.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E4E72D17DFF920585F1EA13051974A0D /* Frameworks */ = {
+		D604B90C5B54CE80259652C11842550F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49AB70D939D18A7AA27259164E235EE4 /* Foundation.framework in Frameworks */,
+				95CECB6F899F87C465735AB384C0BD28 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,80 +227,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09FF55EE83D2B7B77CB0C5B4DB5B8F35 /* Frameworks */ = {
+		0E66F5F76438797E814DB1F34C9E69EF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B416434BD4943187124D8E3388E5B67A /* HMFoundation.framework */,
+				AFD4B0C715D6BCEF40CCCAE1024EBA73 /* AGCResources.bundle */,
 			);
-			name = Frameworks;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		11D7E0313A77720D3A87C2A39A0CF348 /* Frameworks */ = {
+		24D4332AF57826C68C3CDEB2E2EBAB55 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DD33CC11B5B3F2B1F1F01B769AC264A2 /* AGConnectCore.framework */,
+				A1F5204BD63B839FF80FDAC03366B2C4 /* Images.xcassets */,
 			);
-			name = Frameworks;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		162AF672101D15EB5324CFEE1C22AB5C /* AGConnectCredential */ = {
+		26CA1508E9587740B8D38ADE1F80CCA2 /* AGConnectCredential */ = {
 			isa = PBXGroup;
 			children = (
-				F40122471B461ABEFA8AB3D470E53C77 /* Frameworks */,
-				58B30FE1020F8E14A0EA39DD410554E7 /* Resources */,
-				D9F0D90B57043C75FEBDC0642683E653 /* Support Files */,
+				F087E8C53937A019C689C6D370F98108 /* Frameworks */,
+				0E66F5F76438797E814DB1F34C9E69EF /* Resources */,
+				6F62EE7F63F9F498D17B19274C8E0A7E /* Support Files */,
 			);
 			name = AGConnectCredential;
 			path = AGConnectCredential;
 			sourceTree = "<group>";
 		};
-		19C0CA0B408E387F9577FC14E17224A4 /* Support Files */ = {
+		2B6E0B0794026FAC146227C81DA56BFE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E303CDD2360186776D8016C05E1AD8C8 /* EAAlert.modulemap */,
-				E4A22A01B04194AF90E787DBB6DE1542 /* EAAlert-dummy.m */,
-				B2126C687EC16DDEE2CEB74E473D3F09 /* EAAlert-Info.plist */,
-				93E7D399D4653034375D216232A38D8D /* EAAlert-prefix.pch */,
-				1048DA7376A4BAA85428B0CCB1B556AF /* EAAlert-umbrella.h */,
-				5BC22E6F40C4C7359900F78D4C7EA952 /* EAAlert.debug.xcconfig */,
-				864BE2CA40D6AD9F263F32DB1B5F424C /* EAAlert.release.xcconfig */,
+				656A5E71EF01358B8EAA6960D3BD9C80 /* HiAnalytics.bundle */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/EAAlert";
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		1AB6B0C557E3783BF61B985CC6B22B13 /* Support Files */ = {
+		3123D91A11824BBA52ECBC41061CCD7B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D5E1E34DA2F8C2C636D91337B5BEAB35 /* AGConnectCore.debug.xcconfig */,
-				22EDD5CD54EEE1E917A3E5290D682E99 /* AGConnectCore.release.xcconfig */,
+				9410F9BCC4CE38A3BB82A7601C510442 /* AGConnectCore.debug.xcconfig */,
+				F97F554304CD3EC61A74097D15D80D35 /* AGConnectCore.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AGConnectCore";
 			sourceTree = "<group>";
 		};
-		37C455AC6BB90D2400BE9FEE0CCD8078 /* Frameworks */ = {
+		342CC8BD583F4F1AC7268C02E6D0BD4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				62C555652BB4A88056751DDBFC9CC14E /* AGConnectCrash.framework */,
+				C38857BEE55D135D4F50096778E746E8 /* AGConnectCrash.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3C8E14D90BA6818A9D4CE1CBDE039889 /* Resources */ = {
+		3D9AE4A5C1D811366EC2296FEDF42625 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DDEFDCC03C21BFDD4FCE8A58B73C6A07 /* Images.xcassets */,
+				0B420D9C6AABE6421A19CA56D227DB34 /* ScanKitFrameWork.debug.xcconfig */,
+				3068A3F78F372D88754C1395886D4960 /* ScanKitFrameWork.release.xcconfig */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/ScanKitFrameWork";
 			sourceTree = "<group>";
 		};
-		4B4AABFFD6783D9DB9DBBDF7F961436C /* Frameworks */ = {
+		4E2A3C0A6979E869ACAA22689A16BA89 /* HiAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				B546B6A0FD74CAA57EC92EBCE5A8CD3E /* HiAnalytics.framework */,
+				7F0979482C16E725571C39F8EC45EBD0 /* Frameworks */,
+				2B6E0B0794026FAC146227C81DA56BFE /* Resources */,
+				69A62B704F3D1431C75A37637824E2CF /* Support Files */,
 			);
-			name = Frameworks;
+			name = HiAnalytics;
+			path = HiAnalytics;
 			sourceTree = "<group>";
 		};
 		4E632345457BCEAA5DC11A56368259A9 /* Targets Support Files */ = {
@@ -297,26 +315,6 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		58B30FE1020F8E14A0EA39DD410554E7 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				6063E002ABA0A7AEF41ADE7F3F564E76 /* AGCResources.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		5A0D4712813F105D6A2968181B78083C /* EAAlert */ = {
-			isa = PBXGroup;
-			children = (
-				425A20FC94DA9C1435974C50375E798C /* EAAlert.swift */,
-				0D17977534D5C2B0847A58596C4EBB73 /* StringExtension.swift */,
-				3C8E14D90BA6818A9D4CE1CBDE039889 /* Resources */,
-				19C0CA0B408E387F9577FC14E17224A4 /* Support Files */,
-			);
-			name = EAAlert;
-			path = EAAlert;
 			sourceTree = "<group>";
 		};
 		5DCE959B168AC9364C7592093F5D1032 /* Pods-Grocery */ = {
@@ -337,22 +335,34 @@
 			path = "Target Support Files/Pods-Grocery";
 			sourceTree = "<group>";
 		};
-		630C3FF9B4AA5C842BF7A468A10CC8B9 /* Resources */ = {
+		69A62B704F3D1431C75A37637824E2CF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				28E7DD2A6A11238C25778DED90E53A0F /* HiAnalytics.bundle */,
+				B1BDE429A2004CE00322DF66F46CCA44 /* HiAnalytics.debug.xcconfig */,
+				B885D7832BB5220A2AC8996A7E67A643 /* HiAnalytics.release.xcconfig */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/HiAnalytics";
 			sourceTree = "<group>";
 		};
-		6C519272AD38262E107F200B235DC6AA /* AGConnectCrash */ = {
+		6BDDB00C1C1F2A9207B8FE748E13A2DC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				37C455AC6BB90D2400BE9FEE0CCD8078 /* Frameworks */,
-				B8A34EB545374337E3B38BC7ACA3E6F3 /* Support Files */,
+				375A1354E7A6788288A1C675CEFEDB98 /* HMFoundation.debug.xcconfig */,
+				EEDB6284656E777E8307AF92BF658908 /* HMFoundation.release.xcconfig */,
 			);
-			name = AGConnectCrash;
-			path = AGConnectCrash;
+			name = "Support Files";
+			path = "../Target Support Files/HMFoundation";
+			sourceTree = "<group>";
+		};
+		6F62EE7F63F9F498D17B19274C8E0A7E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C50B6951A0DF42894D8D5D30BB7B74F9 /* AGConnectCredential.debug.xcconfig */,
+				08D0F92C11B5504DE64AC2BE294B0D92 /* AGConnectCredential.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AGConnectCredential";
 			sourceTree = "<group>";
 		};
 		75C474D7625AAED141473935B9CB8CFB /* Products */ = {
@@ -364,57 +374,48 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		81F5F7D914542E0DAE8C6D5D25647A08 /* Pods */ = {
+		7F0979482C16E725571C39F8EC45EBD0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A8A6A3791F03C0A0039ECA0729970A4F /* AGConnectCore */,
-				6C519272AD38262E107F200B235DC6AA /* AGConnectCrash */,
-				162AF672101D15EB5324CFEE1C22AB5C /* AGConnectCredential */,
-				5A0D4712813F105D6A2968181B78083C /* EAAlert */,
-				E2E6F73045F53BDB3045EFB9816AE059 /* HiAnalytics */,
-				CFBAEB796831950D8C44F42153FFBBC1 /* HMFoundation */,
+				3E70ADE8A7CCE10C263DE3B960786158 /* HiAnalytics.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A3C0FE2BAC3CAD6B2C090EC81E35EA82 /* Support Files */ = {
+		804F053DC559C4A009BE88AECC8260E6 /* AGConnectCrash */ = {
 			isa = PBXGroup;
 			children = (
-				9B49DEF4D8189A20A75F723E2263701C /* HiAnalytics.debug.xcconfig */,
-				B4412447EEE6F706B62E385203C0FEC7 /* HiAnalytics.release.xcconfig */,
+				342CC8BD583F4F1AC7268C02E6D0BD4B /* Frameworks */,
+				B1C6A2F469E558F752B5C0E36EDEB2DA /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/HiAnalytics";
+			name = AGConnectCrash;
+			path = AGConnectCrash;
 			sourceTree = "<group>";
 		};
-		A8A6A3791F03C0A0039ECA0729970A4F /* AGConnectCore */ = {
+		AF424B65B0684584AF14EFF48A4E1177 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				11D7E0313A77720D3A87C2A39A0CF348 /* Frameworks */,
-				1AB6B0C557E3783BF61B985CC6B22B13 /* Support Files */,
+				57F10E37D61DBE4FB968267CCBC02B3F /* ScanKitFrameWork.framework */,
 			);
-			name = AGConnectCore;
-			path = AGConnectCore;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A987181F447B6A399B122B2C91B7467F /* Support Files */ = {
+		B1C6A2F469E558F752B5C0E36EDEB2DA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				42BFA33D6A841A70131F2B9AA2A0EC14 /* HMFoundation.debug.xcconfig */,
-				60E3DD927AA30F747A9699324F22C125 /* HMFoundation.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/HMFoundation";
-			sourceTree = "<group>";
-		};
-		B8A34EB545374337E3B38BC7ACA3E6F3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				31E24EEFE362B9A5041617E741BA3254 /* AGConnectCrash.debug.xcconfig */,
-				DA825E109A12B710D7BD7E692159525B /* AGConnectCrash.release.xcconfig */,
+				6F00B07F6E279EB4F76B66E191F5EC5A /* AGConnectCrash.debug.xcconfig */,
+				5AB69BEC0933DB493A4D59813F6874F7 /* AGConnectCrash.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AGConnectCrash";
+			sourceTree = "<group>";
+		};
+		C114287BDA4383B70E9DBF4817B39816 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43C7BE2261BD7DE550513371EC4593BB /* AGConnectCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -422,20 +423,18 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				81F5F7D914542E0DAE8C6D5D25647A08 /* Pods */,
+				E02F583C1401D78B139608E1A537BE8B /* Pods */,
 				75C474D7625AAED141473935B9CB8CFB /* Products */,
 				4E632345457BCEAA5DC11A56368259A9 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		CFBAEB796831950D8C44F42153FFBBC1 /* HMFoundation */ = {
+		D06E360D198E51E1279C9B7C4AEFD28D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				09FF55EE83D2B7B77CB0C5B4DB5B8F35 /* Frameworks */,
-				A987181F447B6A399B122B2C91B7467F /* Support Files */,
+				F167977CCC26493114228AD4C9AE1890 /* ScanKitFrameWorkBundle.bundle */,
 			);
-			name = HMFoundation;
-			path = HMFoundation;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -446,51 +445,110 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D9F0D90B57043C75FEBDC0642683E653 /* Support Files */ = {
+		D31052D7A464A7F47898D3BED1EEAC55 /* HMFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				2A4BD89339417D5FD0230696EC820C78 /* AGConnectCredential.debug.xcconfig */,
-				7D3F86BCB09710E50AE95D268E049E43 /* AGConnectCredential.release.xcconfig */,
+				E68ED3EB1DDE66ACD54CD5C99DF86CA8 /* Frameworks */,
+				6BDDB00C1C1F2A9207B8FE748E13A2DC /* Support Files */,
+			);
+			name = HMFoundation;
+			path = HMFoundation;
+			sourceTree = "<group>";
+		};
+		E02F583C1401D78B139608E1A537BE8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F318E6F8A6A14A0C688656E4A0CEEA4B /* AGConnectCore */,
+				804F053DC559C4A009BE88AECC8260E6 /* AGConnectCrash */,
+				26CA1508E9587740B8D38ADE1F80CCA2 /* AGConnectCredential */,
+				F1637F3C66FF19D2E246B7BA2A4C01AB /* EAAlert */,
+				4E2A3C0A6979E869ACAA22689A16BA89 /* HiAnalytics */,
+				D31052D7A464A7F47898D3BED1EEAC55 /* HMFoundation */,
+				FDACE9DA6E632B7AD82A2A88C8ACCFAB /* ScanKitFrameWork */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E35FC1C9E01E8F772872F380C02E402E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C1F695610D2171A5C231908E8CC827E /* EAAlert.modulemap */,
+				56EF511BAB90AC846800A7D91ADA5972 /* EAAlert-dummy.m */,
+				112E8F59D759691E5C2DECED122FD8C7 /* EAAlert-Info.plist */,
+				1CFCEC93E818864257CD41DFE282D62B /* EAAlert-prefix.pch */,
+				81E14B75A34F79A20D186AC83E0473E5 /* EAAlert-umbrella.h */,
+				3C65568DC8D46AE94F2AA92725FB65ED /* EAAlert.debug.xcconfig */,
+				6EF53E68D3BA0342FD8C5993C5628AD0 /* EAAlert.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/AGConnectCredential";
+			path = "../Target Support Files/EAAlert";
 			sourceTree = "<group>";
 		};
-		E2E6F73045F53BDB3045EFB9816AE059 /* HiAnalytics */ = {
+		E68ED3EB1DDE66ACD54CD5C99DF86CA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4B4AABFFD6783D9DB9DBBDF7F961436C /* Frameworks */,
-				630C3FF9B4AA5C842BF7A468A10CC8B9 /* Resources */,
-				A3C0FE2BAC3CAD6B2C090EC81E35EA82 /* Support Files */,
-			);
-			name = HiAnalytics;
-			path = HiAnalytics;
-			sourceTree = "<group>";
-		};
-		F40122471B461ABEFA8AB3D470E53C77 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				97DBDEC50A5A6A61569BD92F13372C30 /* AGConnectCredential.framework */,
+				3B76C247D05C966961BC0F797E364EA1 /* HMFoundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F087E8C53937A019C689C6D370F98108 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1D1F6F891760ED4A62723FB1107EC54 /* AGConnectCredential.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1637F3C66FF19D2E246B7BA2A4C01AB /* EAAlert */ = {
+			isa = PBXGroup;
+			children = (
+				99A43295EC9E63ABCE43134ABBA06CCA /* EAAlert.swift */,
+				B700254BFD6E08CC7D671B7A9EAD0ACC /* StringExtension.swift */,
+				24D4332AF57826C68C3CDEB2E2EBAB55 /* Resources */,
+				E35FC1C9E01E8F772872F380C02E402E /* Support Files */,
+			);
+			name = EAAlert;
+			path = EAAlert;
+			sourceTree = "<group>";
+		};
+		F318E6F8A6A14A0C688656E4A0CEEA4B /* AGConnectCore */ = {
+			isa = PBXGroup;
+			children = (
+				C114287BDA4383B70E9DBF4817B39816 /* Frameworks */,
+				3123D91A11824BBA52ECBC41061CCD7B /* Support Files */,
+			);
+			name = AGConnectCore;
+			path = AGConnectCore;
+			sourceTree = "<group>";
+		};
+		FDACE9DA6E632B7AD82A2A88C8ACCFAB /* ScanKitFrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				AF424B65B0684584AF14EFF48A4E1177 /* Frameworks */,
+				D06E360D198E51E1279C9B7C4AEFD28D /* Resources */,
+				3D9AE4A5C1D811366EC2296FEDF42625 /* Support Files */,
+			);
+			name = ScanKitFrameWork;
+			path = ScanKitFrameWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		28465D3A6D97084668B0A51D31CBCA41 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C400FB8F6EC4B43A0E513590ED609C55 /* Pods-Grocery-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3E45ED256A32DD8972E2A51042FB9ED4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				650D02B7B4C3A6879F21F11BE0029F49 /* EAAlert-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A450C0A907F0A0E7ACF818476ED0B398 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBB1CBE0E40E3D765772ABBB4AB50BD /* Pods-Grocery-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,22 +575,23 @@
 		};
 		C7C186FD68A1DD75CAC1DBE2C426F575 /* Pods-Grocery */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 182712539642CCD6AF96BD4E229B5D30 /* Build configuration list for PBXNativeTarget "Pods-Grocery" */;
+			buildConfigurationList = A757CB11640FB61099304C7B189A09A8 /* Build configuration list for PBXNativeTarget "Pods-Grocery" */;
 			buildPhases = (
-				28465D3A6D97084668B0A51D31CBCA41 /* Headers */,
-				82A65A92E62BC2F8D2A398D2EF323C65 /* Sources */,
-				E4E72D17DFF920585F1EA13051974A0D /* Frameworks */,
-				5C25D72F9266D2D792D0C318E0F9B74D /* Resources */,
+				A450C0A907F0A0E7ACF818476ED0B398 /* Headers */,
+				30AD2B13E77FCA1F1C72002B9D51422C /* Sources */,
+				D604B90C5B54CE80259652C11842550F /* Frameworks */,
+				79505AB9557ACC28DEAD10CF91233EAB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				292B0202A1348A1E18F5E2F02075122D /* PBXTargetDependency */,
-				337570581C434E4C28820F108431AB98 /* PBXTargetDependency */,
-				EF64585BB8119C7933A112A029DF3FC1 /* PBXTargetDependency */,
-				5FBA11B92C0072AA09FFBCB6BB7482A2 /* PBXTargetDependency */,
-				FE76F1B4CCADAE6E39A538FAA59DB6A6 /* PBXTargetDependency */,
-				D795A4918CAC7053FE1E724ABE0575AA /* PBXTargetDependency */,
+				AB596A44609DF4218E99DB3D4DE162F3 /* PBXTargetDependency */,
+				DF42F76B6BF3111EB879080A1229FBEE /* PBXTargetDependency */,
+				D778F4AD616D021948B9712787A868A2 /* PBXTargetDependency */,
+				5BADF4211C13454C0BF3D85748A21956 /* PBXTargetDependency */,
+				7C50334066D5AF70F393075498F98B37 /* PBXTargetDependency */,
+				622C3F6894F90D8D414399C39307B3A2 /* PBXTargetDependency */,
+				E3423CA61D389FC54D2B2718F679AC95 /* PBXTargetDependency */,
 			);
 			name = "Pods-Grocery";
 			productName = "Pods-Grocery";
@@ -568,12 +627,13 @@
 				2A070B3F458158122F5C2B948726944F /* HiAnalytics */,
 				050CD8D686878C1A3E4282F4BCA08E00 /* HMFoundation */,
 				C7C186FD68A1DD75CAC1DBE2C426F575 /* Pods-Grocery */,
+				C81EC52488B257A8F998BC66A070B212 /* ScanKitFrameWork */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5C25D72F9266D2D792D0C318E0F9B74D /* Resources */ = {
+		79505AB9557ACC28DEAD10CF91233EAB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -591,6 +651,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		30AD2B13E77FCA1F1C72002B9D51422C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07850FB1EC7E13E201BC0436223EEC9F /* Pods-Grocery-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A64D5A3DECAC5B8D87B7E4F11A40CAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -601,83 +669,81 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82A65A92E62BC2F8D2A398D2EF323C65 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B4E20CF7FAB3ED7B0F48BCB295EEE270 /* Pods-Grocery-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		01E19C05AA4B360DA48C4A6238E6A768 /* PBXTargetDependency */ = {
+		089F8D9AFA6EF93A2EA76ED2AA927795 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HMFoundation;
+			target = 050CD8D686878C1A3E4282F4BCA08E00 /* HMFoundation */;
+			targetProxy = B45ED929E3B05173E6E7C7197B631719 /* PBXContainerItemProxy */;
+		};
+		433465CF0A688B3CAC2E2A63C28BEC2D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AGConnectCredential;
 			target = 3688C08B8DBB2E0DAC0AAFB09207BDAA /* AGConnectCredential */;
-			targetProxy = B1DE5B885AE698BEBB3D023BC5BFC492 /* PBXContainerItemProxy */;
+			targetProxy = 2FC39681AB1DC48C04C17FEAC1A6CEAA /* PBXContainerItemProxy */;
 		};
-		292B0202A1348A1E18F5E2F02075122D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AGConnectCore;
-			target = 32ACCC280C838779A9622A4E54C8025A /* AGConnectCore */;
-			targetProxy = 61B8FDB964732A88F86ED8D86B423516 /* PBXContainerItemProxy */;
-		};
-		337570581C434E4C28820F108431AB98 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AGConnectCrash;
-			target = 3F3CA1D88ACAD539E613D4F6B1409530 /* AGConnectCrash */;
-			targetProxy = 59DD6ACAC114F0E78AD320A710289A53 /* PBXContainerItemProxy */;
-		};
-		5FBA11B92C0072AA09FFBCB6BB7482A2 /* PBXTargetDependency */ = {
+		5BADF4211C13454C0BF3D85748A21956 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EAAlert;
 			target = 93631E31567C2F3EA4F07758F46C1FBF /* EAAlert */;
-			targetProxy = EBF66CCDDB781B46347B6F110C7C9DCB /* PBXContainerItemProxy */;
+			targetProxy = 83204604412813A1AC160A740807AAE3 /* PBXContainerItemProxy */;
 		};
-		80F59961700978906648FA37CCB82EDE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AGConnectCredential;
-			target = 3688C08B8DBB2E0DAC0AAFB09207BDAA /* AGConnectCredential */;
-			targetProxy = A3D606CDFC675450A776F0B96D312AA5 /* PBXContainerItemProxy */;
-		};
-		C3A7A4D9FEEF322C3FA6826044017B28 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AGConnectCore;
-			target = 32ACCC280C838779A9622A4E54C8025A /* AGConnectCore */;
-			targetProxy = C4FBA7876554F0A23B2936242CA06127 /* PBXContainerItemProxy */;
-		};
-		C71301CA19DDD19B1F8BE7462CEF8A1E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HMFoundation;
-			target = 050CD8D686878C1A3E4282F4BCA08E00 /* HMFoundation */;
-			targetProxy = AB0ED4A21A3F063C167608CEAA985DC0 /* PBXContainerItemProxy */;
-		};
-		D795A4918CAC7053FE1E724ABE0575AA /* PBXTargetDependency */ = {
+		622C3F6894F90D8D414399C39307B3A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HiAnalytics;
 			target = 2A070B3F458158122F5C2B948726944F /* HiAnalytics */;
-			targetProxy = 462BBF2CC4D180F767ABCCE20C754656 /* PBXContainerItemProxy */;
+			targetProxy = D469BFA7046CE41F65D3A748C59A6C23 /* PBXContainerItemProxy */;
 		};
-		EF64585BB8119C7933A112A029DF3FC1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AGConnectCredential;
-			target = 3688C08B8DBB2E0DAC0AAFB09207BDAA /* AGConnectCredential */;
-			targetProxy = 47A594A9B3BEE1BF4EFE1AC56A72CF82 /* PBXContainerItemProxy */;
-		};
-		FE76F1B4CCADAE6E39A538FAA59DB6A6 /* PBXTargetDependency */ = {
+		7C50334066D5AF70F393075498F98B37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HMFoundation;
 			target = 050CD8D686878C1A3E4282F4BCA08E00 /* HMFoundation */;
-			targetProxy = FEBB8002279BDECA760D0DC2C2C884DF /* PBXContainerItemProxy */;
+			targetProxy = 467D80AB071C6BBBA8AE5C604F9024E4 /* PBXContainerItemProxy */;
+		};
+		92D51AC2A4887AA1F0C3EF1F85588C51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AGConnectCredential;
+			target = 3688C08B8DBB2E0DAC0AAFB09207BDAA /* AGConnectCredential */;
+			targetProxy = A7FC917678E19368ED2FEEEE4B4E45EB /* PBXContainerItemProxy */;
+		};
+		AB596A44609DF4218E99DB3D4DE162F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AGConnectCore;
+			target = 32ACCC280C838779A9622A4E54C8025A /* AGConnectCore */;
+			targetProxy = F606296202A73359E08FF6C51C3DF36E /* PBXContainerItemProxy */;
+		};
+		C2C1DBB9C30EB4DFD0A6672090230036 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AGConnectCore;
+			target = 32ACCC280C838779A9622A4E54C8025A /* AGConnectCore */;
+			targetProxy = AF9CE6C48BF06F1FC4A07196BC5C3060 /* PBXContainerItemProxy */;
+		};
+		D778F4AD616D021948B9712787A868A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AGConnectCredential;
+			target = 3688C08B8DBB2E0DAC0AAFB09207BDAA /* AGConnectCredential */;
+			targetProxy = 4A0EFAAB326D6164C5A60250FFAE1286 /* PBXContainerItemProxy */;
+		};
+		DF42F76B6BF3111EB879080A1229FBEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AGConnectCrash;
+			target = 3F3CA1D88ACAD539E613D4F6B1409530 /* AGConnectCrash */;
+			targetProxy = 76F18CFC9F11AB4AF4C02CA2384E721B /* PBXContainerItemProxy */;
+		};
+		E3423CA61D389FC54D2B2718F679AC95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ScanKitFrameWork;
+			target = C81EC52488B257A8F998BC66A070B212 /* ScanKitFrameWork */;
+			targetProxy = 4468DD52633500BAAC7204BC6350AE7B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		032D063A80E29B63614690EA21557811 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA825E109A12B710D7BD7E692159525B /* AGConnectCrash.release.xcconfig */;
+			baseConfigurationReference = 5AB69BEC0933DB493A4D59813F6874F7 /* AGConnectCrash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -692,9 +758,9 @@
 			};
 			name = Release;
 		};
-		3ED94FD47E66B98949DBC39E8FA42FBA /* Debug */ = {
+		36B4761503951163A0AE16BD67ADEA1B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42BFA33D6A841A70131F2B9AA2A0EC14 /* HMFoundation.debug.xcconfig */;
+			baseConfigurationReference = 375A1354E7A6788288A1C675CEFEDB98 /* HMFoundation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -708,40 +774,19 @@
 			};
 			name = Debug;
 		};
-		4DE3DD1E94D336677D3B2E0CD39C50A9 /* Debug */ = {
+		504034D299687E3614165DFDC8A7F709 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F40D964155DD89E4F28819F48B8E3C3 /* Pods-Grocery.debug.xcconfig */;
+			baseConfigurationReference = 0B420D9C6AABE6421A19CA56D227DB34 /* ScanKitFrameWork.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Grocery/Pods-Grocery-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Grocery/Pods-Grocery.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -807,58 +852,9 @@
 			};
 			name = Release;
 		};
-		6A8D232883CD134CCC399A75FE957ADE /* Debug */ = {
+		598A2BD62A6CB72D09E733E50E23E11F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31E24EEFE362B9A5041617E741BA3254 /* AGConnectCrash.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7B4A9F83AB32A9AB1132CE6ABEFF954B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D3F86BCB09710E50AE95D268E049E43 /* AGConnectCredential.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		7D7F941AFEA970C7A241DCD598061FDF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A4BD89339417D5FD0230696EC820C78 /* AGConnectCredential.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7ED4925A0D7992B89EBF4539C07076C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 543BB28F96BD9174FF8AB05BA738B5AE /* Pods-Grocery.release.xcconfig */;
+			baseConfigurationReference = 7F40D964155DD89E4F28819F48B8E3C3 /* Pods-Grocery.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -888,15 +884,30 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
+		};
+		6A8D232883CD134CCC399A75FE957ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F00B07F6E279EB4F76B66E191F5EC5A /* AGConnectCrash.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		87B0473677990E3743595474D0843FE3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4412447EEE6F706B62E385203C0FEC7 /* HiAnalytics.release.xcconfig */;
+			baseConfigurationReference = B885D7832BB5220A2AC8996A7E67A643 /* HiAnalytics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -913,7 +924,7 @@
 		};
 		9AB9877E64F7742850016A3D23B3BBF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BC22E6F40C4C7359900F78D4C7EA952 /* EAAlert.debug.xcconfig */;
+			baseConfigurationReference = 3C65568DC8D46AE94F2AA92725FB65ED /* EAAlert.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -947,7 +958,7 @@
 		};
 		9BE51921ED61B68F0B85D847457C9660 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 864BE2CA40D6AD9F263F32DB1B5F424C /* EAAlert.release.xcconfig */;
+			baseConfigurationReference = 6EF53E68D3BA0342FD8C5993C5628AD0 /* EAAlert.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1048,7 +1059,7 @@
 		};
 		ABE1702B9546875939EC4189235F3B16 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B49DEF4D8189A20A75F723E2263701C /* HiAnalytics.debug.xcconfig */;
+			baseConfigurationReference = B1BDE429A2004CE00322DF66F46CCA44 /* HiAnalytics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1061,10 +1072,27 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		ADE59BCE029C1E87B0C64C87B47373F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEDB6284656E777E8307AF92BF658908 /* HMFoundation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		AE2760AED9BAFDBEB0ED74F1C3B02FEF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5E1E34DA2F8C2C636D91337B5BEAB35 /* AGConnectCore.debug.xcconfig */;
+			baseConfigurationReference = 9410F9BCC4CE38A3BB82A7601C510442 /* AGConnectCore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1078,9 +1106,80 @@
 			};
 			name = Debug;
 		};
-		D0473EC3EF7DEE147AC8016EF72B5829 /* Release */ = {
+		C31EF85535C6FDC41752D78C10101CCD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60E3DD927AA30F747A9699324F22C125 /* HMFoundation.release.xcconfig */;
+			baseConfigurationReference = C50B6951A0DF42894D8D5D30BB7B74F9 /* AGConnectCredential.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3B89254856497683A29894EE9A76C02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3068A3F78F372D88754C1395886D4960 /* ScanKitFrameWork.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC845FB199B50C8B4E9393E2D750AF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 543BB28F96BD9174FF8AB05BA738B5AE /* Pods-Grocery.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Grocery/Pods-Grocery-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Grocery/Pods-Grocery.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DFCE032710F1DAE1FD16C2EEEB36380B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08D0F92C11B5504DE64AC2BE294B0D92 /* AGConnectCredential.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1097,7 +1196,7 @@
 		};
 		F8634E7B96C39A54284159FAD0467549 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22EDD5CD54EEE1E917A3E5290D682E99 /* AGConnectCore.release.xcconfig */;
+			baseConfigurationReference = F97F554304CD3EC61A74097D15D80D35 /* AGConnectCore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1120,15 +1219,6 @@
 			buildConfigurations = (
 				6A8D232883CD134CCC399A75FE957ADE /* Debug */,
 				032D063A80E29B63614690EA21557811 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		182712539642CCD6AF96BD4E229B5D30 /* Build configuration list for PBXNativeTarget "Pods-Grocery" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4DE3DD1E94D336677D3B2E0CD39C50A9 /* Debug */,
-				7ED4925A0D7992B89EBF4539C07076C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1160,6 +1250,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5483BF646BD3EF4364E6CFDC15454FBF /* Build configuration list for PBXAggregateTarget "ScanKitFrameWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504034D299687E3614165DFDC8A7F709 /* Debug */,
+				D3B89254856497683A29894EE9A76C02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74174A1EB5264D21BD59FC9B573A25B3 /* Build configuration list for PBXAggregateTarget "AGConnectCredential" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C31EF85535C6FDC41752D78C10101CCD /* Debug */,
+				DFCE032710F1DAE1FD16C2EEEB36380B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		777E8DB612D1339637FEC61DE256D0DB /* Build configuration list for PBXAggregateTarget "AGConnectCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1169,20 +1277,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B770C6DDBCC4B07BA0A57C997369313D /* Build configuration list for PBXAggregateTarget "AGConnectCredential" */ = {
+		A757CB11640FB61099304C7B189A09A8 /* Build configuration list for PBXNativeTarget "Pods-Grocery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7D7F941AFEA970C7A241DCD598061FDF /* Debug */,
-				7B4A9F83AB32A9AB1132CE6ABEFF954B /* Release */,
+				598A2BD62A6CB72D09E733E50E23E11F /* Debug */,
+				DC845FB199B50C8B4E9393E2D750AF2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE16698D106FF1CDC69EFABC2E74D3C5 /* Build configuration list for PBXAggregateTarget "HMFoundation" */ = {
+		B019E442447952C314796C8501EA9DD6 /* Build configuration list for PBXAggregateTarget "HMFoundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3ED94FD47E66B98949DBC39E8FA42FBA /* Debug */,
-				D0473EC3EF7DEE147AC8016EF72B5829 /* Release */,
+				36B4761503951163A0AE16BD67ADEA1B /* Debug */,
+				ADE59BCE029C1E87B0C64C87B47373F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

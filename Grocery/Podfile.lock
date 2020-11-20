@@ -9,12 +9,14 @@ PODS:
   - HiAnalytics (5.0.1.300):
     - AGConnectCredential
   - HMFoundation (1.2.0.300)
+  - ScanKitFrameWork (1.0.2.300)
 
 DEPENDENCIES:
   - AGConnectCore
   - AGConnectCrash
   - EAAlert
   - HiAnalytics
+  - ScanKitFrameWork
 
 SPEC REPOS:
   trunk:
@@ -24,6 +26,7 @@ SPEC REPOS:
     - EAAlert
     - HiAnalytics
     - HMFoundation
+    - ScanKitFrameWork
 
 SPEC CHECKSUMS:
   AGConnectCore: bc8f834f68067b86c4fea9e471f585cb2656cf90
@@ -32,7 +35,8 @@ SPEC CHECKSUMS:
   EAAlert: ab6877a79a0ecafba9627cf4d20bfe37efd88e02
   HiAnalytics: ba1ee39637a346e0964f87fb00a665dd686874e9
   HMFoundation: b8132ac8bbb79e6b2dd26a8ca013c22aff53f384
+  ScanKitFrameWork: 0ad578f3db0ef9b64dd0f533d10d10a52ce93c80
 
-PODFILE CHECKSUM: 4ac8a90af166fca7480b23c43943f7535f483486
+PODFILE CHECKSUM: 7df6001cf25860830ceb6b4cb67cb947002a9a35
 
 COCOAPODS: 1.10.0
