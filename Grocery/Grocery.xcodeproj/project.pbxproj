@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		041FD35C2562BADF00CA1117 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FD35B2562BADF00CA1117 /* DataManager.swift */; };
-		049AC1D72563C5DB00C3EBB6 /* agconnect-services.plist in Resources */ = {isa = PBXBuildFile; fileRef = 049AC1D62563C5DB00C3EBB6 /* agconnect-services.plist */; };
+		0491E8AA2567C55A00CD054C /* agconnect-services.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0491E8A92567C55A00CD054C /* agconnect-services.plist */; };
 		049AC1EB2563F5CE00C3EBB6 /* CartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049AC1EA2563F5CE00C3EBB6 /* CartCollectionViewCell.swift */; };
 		04AE6940256274AE00CDD5DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE693F256274AE00CDD5DB /* AppDelegate.swift */; };
 		04AE6942256274AE00CDD5DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE6941256274AE00CDD5DB /* SceneDelegate.swift */; };
@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		041FD35B2562BADF00CA1117 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		049AC1D62563C5DB00C3EBB6 /* agconnect-services.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "agconnect-services.plist"; sourceTree = "<group>"; };
+		0491E8A92567C55A00CD054C /* agconnect-services.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "agconnect-services.plist"; sourceTree = "<group>"; };
 		049AC1EA2563F5CE00C3EBB6 /* CartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCollectionViewCell.swift; sourceTree = "<group>"; };
 		04AE693C256274AE00CDD5DB /* Grocery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grocery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AE693F256274AE00CDD5DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 				04AE6961256279FC00CDD5DB /* Storyboards */,
 				04AE695F256279EB00CDD5DB /* Resources */,
 				04AE694D256274B000CDD5DB /* Info.plist */,
-				049AC1D62563C5DB00C3EBB6 /* agconnect-services.plist */,
+				0491E8A92567C55A00CD054C /* agconnect-services.plist */,
 			);
 			path = Grocery;
 			sourceTree = "<group>";
@@ -241,7 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AE694C256274B000CDD5DB /* LaunchScreen.storyboard in Resources */,
-				049AC1D72563C5DB00C3EBB6 /* agconnect-services.plist in Resources */,
+				0491E8AA2567C55A00CD054C /* agconnect-services.plist in Resources */,
 				04AE6949256274B000CDD5DB /* Assets.xcassets in Resources */,
 				04AE6947256274AE00CDD5DB /* Main.storyboard in Resources */,
 			);
@@ -475,6 +475,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5D4JY3DVDT;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Grocery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -495,6 +496,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5D4JY3DVDT;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Grocery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

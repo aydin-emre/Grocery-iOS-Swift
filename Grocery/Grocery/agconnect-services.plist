@@ -5,13 +5,20 @@
         <key>code</key>
         <dict>
             <key>code1</key>
-            <string>6E9E8A664BFC07891170E1EF44862E50</string>
+            <string>3176AACA11CE47544B47F0F8881C87CE</string>
             <key>code2</key>
-            <string>2002053BC2E0E08051A8A58899B76BF1</string>
+            <string>5EAFC4AE983487EF0D32B207119D2F0E</string>
             <key>code3</key>
-            <string>FC09D2B2C57DDEE62944580EC63C668F</string>
+            <string>191C06C09161EE7CAF89EDF3F4C4F1FC</string>
             <key>code4</key>
-            <string>EA9689901B64C8072ACE2B77CF1F0DEB</string>
+            <string>0CE82233E42903DCAEC5C5D17CD43D60</string>
+        </dict>
+        <key>agcgw</key>
+        <dict>
+            <key>backurl</key>
+            <string>connect-dre.dbankcloud.cn</string>
+            <key>url</key>
+            <string>connect-dre.hispace.hicloud.com</string>
         </dict>
         <key>client</key>
         <dict>
@@ -24,7 +31,7 @@
             <key>client_id</key>
             <string>497638327613129792</string>
             <key>client_secret</key>
-            <string>[!001FEC079D1542D9208BAE1706BAC59A8CC0971CE787E139903A6846BA0655BD6E4C6B7C2D62270AD40E036B29310ECF10D2AE88AA37CFF50CF172436ACA7A6B2F57954705E9075F2295B81E8127D011E7B54AA4DE7BB77B4C240F401FA8F5747B]</string>
+            <string>[!00C7E8B226A7EF1DC933FF97314FD452DB974AB6BBDBE29C41825596091DCDD1F50CB848E7C24EC399096A44789DD98D73C0781DA852DF9E733B8B88D1E7F7858006E11C96D418F9F12A8B959B6D8042F2F19F40C97E987C35AE6317BE6CDE044C]</string>
             <key>project_id</key>
             <string>736430079244704961</string>
             <key>app_id</key>
@@ -35,8 +42,33 @@
             <string>com.ea.Grocery</string>
         </dict>
         <key>service</key>
-        <dict/>
+        <dict>
+            <key>analytics</key>
+            <dict>
+                <key>collector_url</key>
+                <string>datacollector-dre.dt.hicloud.com,datacollector-dre.dt.dbankcloud.cn</string>
+                <key>resource_id</key>
+                <string>p1</string>
+                <key>channel_id</key>
+                <string/>
+            </dict>
+            <key>search</key>
+            <dict>
+                <key>url</key>
+                <string>https://search-dre.cloud.huawei.com</string>
+            </dict>
+            <key>ml</key>
+            <dict>
+                <key>mlservice_url</key>
+                <string>ml-api-dre.ai.dbankcloud.com,ml-api-dre.ai.dbankcloud.cn</string>
+            </dict>
+            <key>cloudstorage</key>
+            <dict>
+                <key>storage_url</key>
+                <string>https://ops-dre.agcstorage.link</string>
+            </dict>
+        </dict>
         <key>region</key>
-        <string/>
+        <string>DE</string>
     </dict>
 </plist>
