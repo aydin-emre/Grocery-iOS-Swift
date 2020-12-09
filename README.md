@@ -11,24 +11,24 @@ At the end of shopping, to make a payment scan QR Code below for a successfull t
 <table>
   <tr>
     <td width="33%">
-      <img src="https://i.ibb.co/hBWXGT7/Simulator-Screen-Shot-i-Phone-12-Pro-Max-2020-11-20-at-09-05-10.png">
+      <img src="./Screenshots/1.png">
     </td>
     <td width="33%">
-      <img src="https://i.ibb.co/61vcScc/Simulator-Screen-Shot-i-Phone-12-Pro-Max-2020-11-20-at-09-05-28.png">
+      <img src="./Screenshots/2.png">
     </td>
     <td width="33%">
-      <img src="https://i.ibb.co/x8zNNsq/Simulator-Screen-Shot-i-Phone-12-Pro-Max-2020-11-20-at-09-05-35.png">
+      <img src="./Screenshots/3.png">
     </td>
   </tr>
   <tr>
     <td width="33%">
-      <img src="https://i.ibb.co/NFbTgyT/Simulator-Screen-Shot-i-Phone-12-Pro-Max-2020-11-20-at-09-05-44.png">
+      <img src="./Screenshots/4.png">
     </td>
     <td width="33%">
-      <img src="https://i.ibb.co/DRRN6QY/Simulator-Screen-Shot-i-Phone-12-Pro-Max-2020-11-20-at-09-20-21.png">
+      <img src="./Screenshots/5.png">
     </td>
     <td width="33%">
-      <img src="https://i.ibb.co/vPzvm3t/Simulator-Screen-Shot-i-Phone-12-Pro-Max-2020-11-20-at-09-29-56.png">
+      <img src="./Screenshots/6.png">
     </td>
   </tr>
 </table>
