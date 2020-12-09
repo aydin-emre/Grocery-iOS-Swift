@@ -38,6 +38,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 请求体
 - (NSDictionary *_Nullable)GWBody;
 
+/// 请求体
+- (NSObject *_Nullable)GWObjectBody;
+
 /// 请求参数
 - (NSDictionary<NSString *, NSString *> *_Nullable)GWQuerys;
 

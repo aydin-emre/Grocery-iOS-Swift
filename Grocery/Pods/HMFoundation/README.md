@@ -30,6 +30,9 @@ pod 'AGConnectAuth'
 |认证服务|pod ‘AGConnectAuth’|
 |崩溃服务|pod ‘AGConnectCrash’|
 |远程配置服务|pod ‘AGConnectRemoteConfig’|
+|应用内消息服务|pod ‘AGConnectAppMessaging’|
+|AppLinking服务|pod ‘AGConnectAppLinking’|
+|云函数服务|pod ‘AGConnectFunction’|
 
 4. 安装 pod，然后打开.xcworkspace文件查看该项目。
 ```

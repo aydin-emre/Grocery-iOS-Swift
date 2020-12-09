@@ -175,11 +175,9 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/EAAlert/EAAlert.framework"
   install_framework "${PODS_ROOT}/ScanKitFrameWork/scansdk-ios-tool-1.0.2.300/ScanKitFrameWork.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/EAAlert/EAAlert.framework"
   install_framework "${PODS_ROOT}/ScanKitFrameWork/scansdk-ios-tool-1.0.2.300/ScanKitFrameWork.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

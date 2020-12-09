@@ -14,7 +14,6 @@
 #import "AGCServiceRepository.h"
 #import "AGCServicesConfig.h"
 #import "AGCToken.h"
-#import "AGCTokenSnapshot.h"
 #import "AGCUserDefaults.h"
 
 #endif

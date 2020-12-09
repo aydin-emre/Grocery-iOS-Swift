@@ -6,7 +6,6 @@ target 'Grocery' do
   use_frameworks!
 
   # Pods for Grocery
-  pod 'EAAlert'
   pod 'AGConnectCore'
   pod 'HiAnalytics'
   pod 'AGConnectCrash'

@@ -6,5 +6,6 @@
 #define AGConnectCrash_H
 
 #import "AGCCrash.h"
+#import "AGCExceptionModel.h"
 
 #endif

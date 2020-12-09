@@ -3,6 +3,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AGCExceptionModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -81,6 +82,19 @@ typedef NS_ENUM(NSUInteger, AGCCrashLogLevel) {
  * @param message  自定义状态的内容
  */
 - (void)log:(NSString *)message NS_SWIFT_NAME(log(message:));
+
+/**
+ * 记录iOS的非致命异常
+ * 该接口会收集线程堆栈，频繁调用可能会影响性能
+ * @param error  iOS的异常，使用error的domain和code作为标志区分不同异常。
+ */
+- (void)recordError:(NSError *)error;
+
+/**
+ * 记录自定义异常，可以设置自定义的异常内容
+ * @param exception  自定义的异常。
+ */
+- (void)recordExceptionModel:(AGCExceptionModel *)exception;
 
 @end
 

@@ -1,20 +1,18 @@
 PODS:
-  - AGConnectCore (1.2.0.300):
-    - HMFoundation (~> 1.2.0)
-  - AGConnectCrash (1.2.0.300):
-    - AGConnectCredential (~> 1.2.0)
-  - AGConnectCredential (1.2.0.300):
-    - AGConnectCore (~> 1.2.0)
-  - EAAlert (0.1.15)
-  - HiAnalytics (5.0.1.300):
-    - AGConnectCredential
-  - HMFoundation (1.2.0.300)
+  - AGConnectCore (1.2.1.300):
+    - HMFoundation (~> 1.2.1)
+  - AGConnectCrash (1.2.1.300):
+    - AGConnectCredential (~> 1.2.1)
+  - AGConnectCredential (1.2.1.300):
+    - AGConnectCore (~> 1.2.1)
+  - HiAnalytics (5.0.5.300):
+    - AGConnectCredential (>= 1.1.0)
+  - HMFoundation (1.2.1.300)
   - ScanKitFrameWork (1.0.2.300)
 
 DEPENDENCIES:
   - AGConnectCore
   - AGConnectCrash
-  - EAAlert
   - HiAnalytics
   - ScanKitFrameWork
 
@@ -23,20 +21,18 @@ SPEC REPOS:
     - AGConnectCore
     - AGConnectCrash
     - AGConnectCredential
-    - EAAlert
     - HiAnalytics
     - HMFoundation
     - ScanKitFrameWork
 
 SPEC CHECKSUMS:
-  AGConnectCore: bc8f834f68067b86c4fea9e471f585cb2656cf90
-  AGConnectCrash: 5dfcaeaa0830c7f37da9f3088ed3daf2df5c662b
-  AGConnectCredential: a5d5f99fce45872fd35375ec1ae8017e282708f8
-  EAAlert: ab6877a79a0ecafba9627cf4d20bfe37efd88e02
-  HiAnalytics: ba1ee39637a346e0964f87fb00a665dd686874e9
-  HMFoundation: b8132ac8bbb79e6b2dd26a8ca013c22aff53f384
+  AGConnectCore: 63b20d3342f0e9b18554431b763b8b842653af0b
+  AGConnectCrash: fdcb6f8074005475d8a20242905dbe6012b9368a
+  AGConnectCredential: cbb343271af1ab8b1e937f6f3c7ebc798e04eb92
+  HiAnalytics: 6a5189b870e39e052a4c62f1ca6ae80cb4e4229a
+  HMFoundation: b8e0a4f582c50735df36e4f9deb87e9a438caea2
   ScanKitFrameWork: 0ad578f3db0ef9b64dd0f533d10d10a52ce93c80
 
-PODFILE CHECKSUM: 7df6001cf25860830ceb6b4cb67cb947002a9a35
+PODFILE CHECKSUM: 2801ef3dddbef688d1b2e85de08479571d32a43b
 
 COCOAPODS: 1.10.0

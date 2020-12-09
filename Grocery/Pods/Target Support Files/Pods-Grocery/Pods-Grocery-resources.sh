@@ -97,13 +97,11 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_ROOT}/AGConnectCredential/AGConnectCredential.framework/AGCResources.bundle"
-  install_resource "${PODS_ROOT}/HiAnalytics/HiAnalytics.framework/HiAnalytics.bundle"
+  install_resource "${PODS_ROOT}/AGConnectCredential/AGCResources.bundle"
   install_resource "${PODS_ROOT}/ScanKitFrameWork/scansdk-ios-tool-1.0.2.300/ScanKitFrameWorkBundle.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_ROOT}/AGConnectCredential/AGConnectCredential.framework/AGCResources.bundle"
-  install_resource "${PODS_ROOT}/HiAnalytics/HiAnalytics.framework/HiAnalytics.bundle"
+  install_resource "${PODS_ROOT}/AGConnectCredential/AGCResources.bundle"
   install_resource "${PODS_ROOT}/ScanKitFrameWork/scansdk-ios-tool-1.0.2.300/ScanKitFrameWorkBundle.bundle"
 fi
 

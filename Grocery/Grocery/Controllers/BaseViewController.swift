@@ -14,11 +14,8 @@
 //
 
 import UIKit
-import EAAlert
 
 public class BaseViewController: UIViewController {
-    
-    var alert: EAAlert!
     
     public func initialSetup() {
         self.view.backgroundColor = bgColor
@@ -28,7 +25,7 @@ public class BaseViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         initialSetup()
-        alert = EAAlert()
+        
     }
     
     public override var preferredStatusBarStyle: UIStatusBarStyle {
