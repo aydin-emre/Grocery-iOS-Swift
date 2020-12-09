@@ -6,6 +6,25 @@ Grocery app is a reference grocery app for Huawei Analytics Kit, Crash Service a
 App written in swift for iOS devices. You can track users' visited pages with Analytics Kit and also can solve problems with Crash Service if any bug occures.<br>
 At the end of shopping, to make a payment scan QR Code below for a successfull transaction. Of corse it is just a demo, don't wait for shipping :)
 
+## :black_square_button: QR Codes
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="./Screenshots/true.png">
+    </td>
+    <td width="50%" align="center">
+      <img src="./Screenshots/false.png">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      Scan this code for successfull payment.
+    </td>
+    <td width="50%" align="center">
+      Scan this code for unsuccessfull payment.
+    </td>
+  </tr>
+</table>
 
 ## :iphone: Screenshots
 <table>
